@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Dokdo&family=Kanit:ital,wght@1,300&family=Wallpoet&display=swap');
+
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* background-image: url(../assets/img/backgroundWhite.jpg); */
+    background-color: #D4AC0D;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* HEADER */
+header {
+    background-color:black;
+}
+.sportmania {
+    font-family: 'Wallpoet', cursive;
+    color: #D4AC0D;
+    font-size: 2.5em;
+}
+header nav a {
+    text-decoration: none;
+}
+.logo {
+    width: 12em;
+    height: 10em;
+    display: flex;
+    order: -1;
+    margin-right: -2em;
+    margin-left: -2em;
+}
+header nav a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: -4em;
+}
+header nav ul li a {
+    font-family: 'Kanit', sans-serif;
+    text-decoration: none;
+    margin: 1em;
+    color: #D4AC0D;
+    font-size: 1.2em;
+}
+
+/* BIENVENIDA */
+.main {
+    padding-top: 8em;
+    padding-bottom: 8em;
+    background-image: url(../assets/img/canchasMain7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tituloBienvenida {
+    font-family: 'Kanit', sans-serif;
+    font-size: 3.5em;
+    padding-left: 15em;
+    margin-top: 1em;
+    text-align: center;
+    color: white
+}
+.parrafoBienvenida {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.5em;
+    padding-left: 20em;
+    padding-right: 5em;
+    text-align: center;
+    color: white;
+}
+main div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* NOVEDADES */
+.novedades {
+    margin: 1em;
+}
+.tituloNovedades {
+    font-family: 'Kanit', sans-serif;
+    color: #D4AC0D;
+    font-size: 3em;
+    margin: 1em;
+    display: flex;
+    justify-content: center;
+    background-color:black;
+}
+.cardsNovedades1 {
+    width: 100%;
+    height: 700px;  
+    background-image: url(../assets/img/campeones.jpg);
+    background-position: center;
+    background-color: rgb(100, 100, 100);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    box-shadow: 5px 8px 12px black;
+}
+.cardsNovedades1 p {
+    font-family: 'Kanit', sans-serif;
+    font-size: 2em;
+    width: 10em;
+    margin-left: 2em;
+    color: white;
+}
+.cardsNovedades2 {
+    width: 100%;
+    height: 700px;
+    margin-top: 2em;
+    background-image: url(../assets/img/proximamente.jpg);
+    background-position: center;
+    background-color: rgb(100, 100, 100);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    box-shadow: 5px 8px 12px black;
+}
+.cardsNovedades2 p {
+    font-family: 'Kanit', sans-serif;
+    font-size: 2em;
+    width: 10em;
+    margin-left: 2em;
+    color: white;
+}
+.cardsNovedades3 {
+    width: 100%;
+    height: 700px;
+    margin-top: 2em;
+    background-image: url(../assets/img/padelMujeres.jpg);
+    background-position: center;
+    background-color: rgb(100, 100, 100);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    box-shadow: 5px 8px 12px black;
+}
+.cardsNovedades3 p {
+    font-family: 'Kanit', sans-serif;
+    font-size: 2em;
+    width: 10em;
+    margin-left: 2em;
+    color: white;
+}
+
+/* QUIENES SOMOS */
+.nosotros {
+    margin: 2em;
+    margin-top: 5em;
+}
+.tituloQuienesSomos {
+    font-family: 'Kanit', sans-serif;
+    color: #D4AC0D;
+    font-size: 3em;
+    margin: 1em;
+    display: flex;
+    justify-content: center;
+    background-color:black;
+}
+.parrafoQuienesSomos {
+    font-family: 'Kanit', sans-serif;
+    font-size: 2em;
+}
+
+/* NUESTRAS ACTIVIDADES */
+.actividades {
+    padding-top: 5em;
+    margin: 2em;
+}
+.tituloNuestrasActividades {
+    font-family: 'Kanit', sans-serif;
+    color: #D4AC0D;
+    font-size: 3em;
+    margin: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+.articulosHome {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.titulosActividadesHome {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.5em;
+    color: black;
+}
+.parrafoActividadesHome {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.2em;
+    color: black;
+}
+.cardsArticles {
+    background-color:#F7DC6F;
+    border-style: dotted;
+    border-color: black;
+    border-width: 0.1em;
+    border-radius: 1em;
+    padding: 2em;
+    margin: 2em;
+}
+.botonVerMas {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    color: midnightblue;
+}
+/* PUBLICIDAD */
+.publicidad {
+    width: 90%;   
+    margin: 0 auto;
+    padding: 10em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-image: url(../assets/img/TiendaDeportiva5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(100, 100, 100);
+    background-blend-mode: soft-light;
+}
+.publicidad p {
+    font-family: 'Kanit', sans-serif;
+    font-size: 2em;
+    margin-left: 2em;
+    color: white;
+}
+
+/* FOOTER */
+#footer {
+    background-color:black;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2em;
+}
+.rrss {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.redesIconos {
+    margin: 1em;
+    color: #D4AC0D;
+}
+.parrafoFooter {
+    font-family: 'Kanit', sans-serif;
+    color: #D4AC0D;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.enlaces {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    font-family: 'Kanit', sans-serif;
+}
+footer div a {
+    text-decoration: none;
+    color: #D4AC0D;
+    font-size: 1.2em;
+}
+/*GRID HOME*/
+.gridContenedor {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(6,0.2fr);
+    grid-template-areas: 
+        "head head head head"
+        "main main main main"
+        "nosotros nosotros nosotros actividades"
+        "novedades novedades novedades actividades"
+        "publicidad publicidad publicidad publicidad"
+        "pie pie pie pie";
+    grid-gap: 1em;
+}
+.head {
+    grid-area: head;
+}
+.main {
+    grid-area: main;
+}
+.nosotros {
+    grid-area: nosotros;
+}
+.novedades {
+    grid-area: novedades;
+}
+.actividades {
+    grid-area: actividades;
+}
+.publicidad {
+    grid-area: publicidad;
+}
+.pie {
+    grid-area: pie;
+}
+
+/* HTML ACTIVIDADES */
+#sectionActividades {
+    font-family: 'Kanit', sans-serif;
+    font-size: 3em;
+    margin: 1em;
+}
+.cardsActividades {
+    margin: 3em;
+    margin-bottom: 15em;
+    display: flex;
+    flex-direction: column;
+}
+.titulosActividades {
+    font-family: 'Kanit', sans-serif;
+    color: #D4AC0D;
+    font-size: 2em;
+    padding-left: 1em;
+    background-color:black;
+}
+.parrafoActividades {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.5em;
+    margin: 1em;
+}
+.botonMasFotos {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    color: midnightblue;
+}
+.futbol {
+    display: flex;
+    flex-direction: row;
+}
+.galerias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.imagenesDeGaleria {
+    width: 400px;
+    height: 250px;
+    margin: 1em;
+    margin-top: 5em;
+}
+.gym {
+    display: flex;
+    flex-direction: row;
+}
+.imagenPresentacion {
+width: 35%;
+margin-top: 1em;
+margin:1em;
+}
+.padel {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/* HTML SERVICIOS */
+.gridContainerServicios {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+        "headServicios headServicios headServicios headServicios"
+        "tituloSection tituloSection tituloSection tituloSection"
+        "cumple asado evento evento"
+        "cantina cantina evento evento"
+        "torneos instalaciones evento evento"
+        "galeria galeria galeria galeria"
+        "pieServicios pieServicios pieServicios pieServicios";
+    grid-gap: 1em;  
+}
+.headServicios {
+    grid-area: headServicios;
+}
+.tituloSection {
+    grid-area: tituloSection;
+}
+.cumple {
+    grid-area: cumple;
+    margin-left: 2em;
+}
+.asado {
+    grid-area: asado;
+    margin-left: 2em;
+}
+.evento {
+    grid-area: evento;
+    justify-self: center;
+}
+.cantina {
+    grid-area: cantina;
+    margin-left: 2em;
+}
+.torneos {
+    grid-area: torneos;
+    margin-left: 2em;
+}
+.instalaciones {
+    grid-area: instalaciones;
+    margin-left: 2em;
+}
+.galeria {
+    grid-area: galeria;
+}
+.pieServicios {
+    grid-area: pieServicios;
+}
+
+.tituloSection h2 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 3em;
+    text-align: center;
+}
+.titulosServicios {
+    font-family: 'Kanit', sans-serif;
+    color: #D4AC0D;
+    font-size: 2em;
+    background-color:black;
+    padding-left: 1em;
+}
+.parrafoServicios {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.5em;
+    margin: 1em;
+}
+/* GRID GALERIA */
+.tituloGaleria{
+    font-family: 'Kanit', sans-serif;
+    color: #D4AC0D;
+    font-size: 2em;
+    padding-left: 1em;
+    background-color:black;
+}
+.gridContainerGaleria {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 350px;
+    padding: 2em;
+    grid-gap: 1em;
+}
+.galeriaImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1em;
+}
+.gridItemGaleria1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+.gridItemGaleria4 {
+    grid-column: 3 / 4;
+    grid-row: 3 / 5;
+}
+.gridItemGaleria6 {
+    grid-column: 1 / 3;
+    grid-row: 7 / 9;
+}
+.gridItemGaleria7 {
+    grid-column: 2 / 4;
+    grid-row: 5 / 7;
+}
+.gridItemGaleria8 {
+    grid-column: 1 / 2;
+    grid-row: 5 / 7;
+}
+.gridItemGaleria9 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 5;
+}
+.gridItemGaleria10 {
+    grid-column: 3 / 4;
+    grid-row: 7 / 9;
+}
+
+.gridItemGaleria11 {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+.gridItemGaleria12 {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+
+
+
+/* HTML PREGUNTAS FRECUENTES */
+#sectionFaq {
+    font-family: 'Kanit', sans-serif;
+    font-size: 3em;
+    margin: 1em;
+}
+.faq {
+    margin: 2em;
+}
+.titulosFaq {
+    font-family: 'Kanit', sans-serif;
+    font-size: 2em;
+}
+.parrafosFaq {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.2em;
+}
+main section article ul li {
+    list-style-type: none;
+}
+
+
+
+/* HTML CONTACTO Y RESERVAS */
+.sectionContactoReservas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#tituloContactoReservas {
+    font-family: 'Kanit', sans-serif;
+    font-size: 3em;
+    margin: 1em;
+}
+.parrafoReserva {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.2em;
+    margin-left: 1em;
+}
+.formulario {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+}
+.otrosDatos {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.5em;
+    margin-top: 8em;
+    margin-bottom: 2em;
+}
+.mapa {
+    margin-top: 2em;
+}

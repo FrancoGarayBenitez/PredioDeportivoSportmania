@@ -44,13 +44,21 @@ header nav ul {
     flex-direction: row;
     justify-content: flex-end;
     margin-top: -4em;
+    margin-right: 1em;
 }
+
 header nav ul li a {
     font-family: 'Kanit', sans-serif;
     text-decoration: none;
     margin: 1em;
     color: #D4AC0D;
     font-size: 1.2em;
+    transform: scale(1,1);
+    transition: transform 1ms;
+}
+/* ANIMACIONES HEADER */
+header nav ul li a:hover {
+    transform: scale(1.1,1.1);
 }
 
 /* BIENVENIDA */
@@ -98,67 +106,32 @@ main div {
     justify-content: center;
     background-color:black;
 }
-.cardsNovedades1 {
-    width: 100%;
+.cardsNovedades {
+    width: 90%;
     height: 700px;
-    background-image: url(../assets/img/campeones.jpg);
-    background-position: center;
-    background-color: rgb(100, 100, 100);
-    background-blend-mode: soft-light;
-    background-size: cover;
-    border-radius: 1em;
-    display: flex;
-    align-items: center;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
     box-shadow: 5px 8px 12px black;
 }
-.cardsNovedades1 p {
-    font-family: 'Kanit', sans-serif;
-    font-size: 2em;
-    width: 10em;
-    margin-left: 2em;
-    color: white;
-}
-.cardsNovedades2 {
+.cardsNovedades img {
     width: 100%;
-    height: 700px;
-    margin-top: 2em;
-    background-image: url(../assets/img/proximamente.jpg);
-    background-position: center;
-    background-color: rgb(100, 100, 100);
-    background-blend-mode: soft-light;
-    background-size: cover;
-    border-radius: 1em;
-    display: flex;
-    align-items: center;
-    box-shadow: 5px 8px 12px black;
+    height: 100%;
+    object-fit: cover;
 }
-.cardsNovedades2 p {
-    font-family: 'Kanit', sans-serif;
-    font-size: 2em;
-    width: 10em;
-    margin-left: 2em;
-    color: white;
-}
-.cardsNovedades3 {
+.cardsNovedades p {
     width: 100%;
-    height: 700px;
-    margin-top: 2em;
-    background-image: url(../assets/img/padelMujeres.jpg);
-    background-position: center;
-    background-color: rgb(100, 100, 100);
-    background-blend-mode: soft-light;
-    background-size: cover;
-    border-radius: 1em;
-    display: flex;
-    align-items: center;
-    box-shadow: 5px 8px 12px black;
-}
-.cardsNovedades3 p {
+    margin: 0;;
     font-family: 'Kanit', sans-serif;
-    font-size: 2em;
-    width: 10em;
-    margin-left: 2em;
+    font-size: 1.8em;
+    text-align: center;
+    padding: 10px;
     color: white;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0, 1));
 }
 
 /* QUIENES SOMOS */
@@ -218,32 +191,66 @@ main div {
     border-radius: 1em;
     padding: 2em;
     margin: 2em;
+    box-shadow: 5px 8px 12px black;
+    
 }
 .botonVerMas {
     display: flex;
     justify-content: center;
-    font-size: 2em;
-    color: midnightblue;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.5em;
+    color:#D4AC0D;
+    margin-top: 1em;
+    text-decoration: none;
+    transform: scale(1,1);
+}
+.botonVerMas:hover {
+    transform: scale(1.2,1.2);
 }
 /* PUBLICIDAD */
 .publicidad {
+    margin-top: 4em;
+    margin-bottom: 4em;
     width: 90%;
-    margin: 0 auto;
-    padding: 10em;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    background-image: url(../assets/img/TiendaDeportiva5.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rgb(100, 100, 100);
-    background-blend-mode: soft-light;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.publicidad p {
+.publicidad article {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 5px 8px 12px black;
+    cursor: pointer;
+}
+.publicidad article img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.publicidad article div {
     font-family: 'Kanit', sans-serif;
     font-size: 2em;
-    margin-left: 2em;
+    position: absolute;
+    width: 100%;
+    height: 100%;
     color: white;
+    top: 0;
+}
+.publicidad article div p{
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0, 1));
+    margin-top: 0;
+    transition: all 500ms ease-out;
+}
+.publicidad article:hover > div p {
+    opacity: 1;
+    visibility: visible;
+    margin-top: 5em;
+    margin-bottom: 5em;
 }
 
 /* FOOTER */
@@ -263,6 +270,10 @@ main div {
 .redesIconos {
     margin: 1em;
     color: #D4AC0D;
+    transform: scale(1,1);
+}
+.redesIconos:hover {
+    transform: scale(1.2,1.2);
 }
 .parrafoFooter {
     font-family: 'Kanit', sans-serif;
@@ -277,24 +288,20 @@ main div {
     flex-direction: column;
     justify-content: start;
     font-family: 'Kanit', sans-serif;
+    transform: scale(1,1);
 }
 footer div a {
     text-decoration: none;
     color: #D4AC0D;
     font-size: 1.2em;
+    transform: scale(1,1);
+}
+footer div a:hover {
+    transform: scale(1.1,1.2);
 }
 /*GRID HOME*/
 .gridContenedor {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(6,0.1fr);
-    grid-template-areas:
-        "head head head head"
-        "main main main main"
-        "nosotros nosotros nosotros actividades"
-        "novedades novedades novedades actividades"
-        "publicidad publicidad publicidad publicidad"
-        "pie pie pie pie";
     grid-gap: 1em;
 }
 .head {
@@ -414,16 +421,21 @@ footer div a {
 }
 .cardsActividades {
     margin: 3em;
-    margin-bottom: 15em;
+    margin-bottom: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
-.titulosActividades {
+.cardsActividades div h3 {
     font-family: 'Kanit', sans-serif;
+    background-color:  black;
     color: #D4AC0D;
+    white-space: pre-line;
+    text-align:center;
+    width:3em;
     font-size: 2em;
-    padding-left: 1em;
-    background-color:black;
+    padding-bottom: 2em;
 }
 .parrafoActividades {
     font-family: 'Kanit', sans-serif;
@@ -431,34 +443,35 @@ footer div a {
     margin: 1em;
 }
 .botonMasFotos {
-    display: flex;
-    justify-content: center;
+    margin-bottom: 2em;
+    background-color: #F7DC6F;
+    width: 10%;
+    margin: 2em auto;
+    transform: scale(1,1);
+}
+.botonMasFotos:hover {
+    transform: scale(1.2,1.2);
+}
+.botonMasFotos a {
+    margin: 0 auto;
     font-size: 2em;
-    color: midnightblue;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    text-decoration: none;
 }
 .futbol {
     display: flex;
-    flex-direction: row;
-}
-.galerias {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.imagenesDeGaleria {
-    width: 400px;
-    height: 250px;
-    margin: 1em;
-    margin-top: 5em;
+    flex-direction: row;   
 }
 .gym {
     display: flex;
     flex-direction: row;
 }
 .imagenPresentacion {
-width: 35%;
-margin-top: 1em;
-margin:1em;
+    width: 35%;
+    margin:1em;
+    border-radius: 2em;
+    box-shadow: 5px 8px 12px black;
 }
 .padel {
     display: flex;
@@ -468,9 +481,15 @@ margin:1em;
 
 
 /* HTML SERVICIOS */
+.cardsServicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
 .gridContainerServicios {
     display: grid;
-    grid-gap: 1em;
+    grid-gap: 2em;
 }
 .headServicios {
     grid-area: headServicios;
@@ -490,7 +509,6 @@ margin:1em;
 .pieServicios {
     grid-area: pieServicios;
 }
-
 .tituloSection h2 {
     font-family: 'Kanit', sans-serif;
     font-size: 3em;
@@ -502,12 +520,22 @@ margin:1em;
     font-size: 2em;
     background-color:black;
     padding-left: 1em;
+    padding-right: 1em;
     margin: 0.5em;
+    text-align: center;
 }
 .parrafoServicios {
     font-family: 'Kanit', sans-serif;
     font-size: 1.5em;
     margin: 1em;
+}
+.evento img {
+    box-shadow: 5px 8px 12px black;
+    transform: scale(1,1);
+    transition: transform 300ms;
+}
+.evento img:hover {
+    transform: scale(1.02,1);
 }
 /* GRID GALERIA */
 .tituloGaleria{
@@ -529,6 +557,13 @@ margin:1em;
     height: 100%;
     object-fit: cover;
     border-radius: 1em;
+    border-style: solid;
+    border-color: #F7DC6F;
+    transform: scale(1,1);
+    transition: transform 500ms;
+}
+.galeriaImg:hover {
+    transform: scale(1.04,1.04);
 }
 .gridItemGaleria1 {
     grid-area: img-1;

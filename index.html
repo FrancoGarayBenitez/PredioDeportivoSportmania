@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+    <link rel="icon" href="./assets/img/Logo1.ico">
     <title>Sportmania</title>
 </head>
 
@@ -41,19 +40,22 @@
         <!-- SECTION NOVEDADES -->
     <section class="novedades">
             <h2 class="tituloNovedades">NOVEDADES</h2>
-            <article class="cardsNovedades1">
-                <p>Aquí están los campeones del torneo de fútbol !</p>
-            </article>
-            <!-- <article class="cardsNovedades2">
+            <div class="cardsNovedades">
+                <img src="./assets/img/campeones.jpg" alt="campeones">
+                <p>Aquí están los campeones del torneo de fútbol</p>
+            </div>
+            <!-- <div class="cardsNovedades">
+                <img src="./assets/img/proximamente.jpg" alt="proximamente">
                 <p>Próximamente...</p>
-            </article>
-            <article class="cardsNovedades3">
+            </div>
+            <div class="cardsNovedades">
+                <img src="./assets/img/padelMujeres.jpg" alt="padelMujeres">
                 <p>No hay quien pare a este dúo</p>
-            </article> -->
+            </div> -->
     </section>
 
         <!-- Section Quienes Somos -->
-    <section class="nosotros">
+    <section class="nosotros" data-aos="fade-right"> 
             <h2 class="tituloQuienesSomos">QUIENES SOMOS</h2>
             <p class="parrafoQuienesSomos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore id laudantium cumque soluta ex voluptatem ab doloribus porro eos pariatur totam, tempore recusandae praesentium dolore rerum tenetur officia fugiat. Ipsum minima ullam nam voluptates quas dolores! Pariatur beatae repellat maiores ipsam enim dignissimos impedit totam est nostrum numquam. Recusandae tempore odit necessitatibus deleniti, voluptatum omnis quae eveniet impedit quas illo saepe et eaque adipisci. Veritatis eveniet dolorum natus assumenda, eos doloribus, ad doloremque, ratione aspernatur perferendis tempore distinctio quis inventore consectetur delectus voluptate suscipit labore magni fuga deleniti? Ullam magni itaque praesentium perspiciatis dolore nobis obcaecati molestiae adipisci repellat. Officiis.</p>
     </section>
@@ -61,18 +63,18 @@
         <!-- Section Nuestras Actividades -->
     <section class="actividades">
             <h2 class="tituloNuestrasActividades">NUESTRAS ACTIVIDADES</h2>
-            <div class="articulosHome">
-                <article class="cardsArticles">
+            <div class="articulosHome" >
+                <article class="cardsArticles" data-aos="flip-right" data-aos-duration="1500">
                     <h3 class="titulosActividadesHome">Fútbol 5-6-7</h3>
                     <p class="parrafoActividadesHome">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis adipisci vel sit iure soluta illo. Asperiores modi, velit amet suscipit iure necessitatibus minus adipisci dignissimos.</p>
                     <a href="./pages/actividades.html" class="botonVerMas">Ver más</a>
                 </article>
-                <article class="cardsArticles">
+                <article class="cardsArticles" data-aos="flip-right" data-aos-duration="1500" >
                     <h3 class="titulosActividadesHome">Gym</h3>
                     <p class="parrafoActividadesHome">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi placeat, animi maxime exercitationem repellendus corrupti iste quod porro blanditiis, reprehenderit minima veritatis ab. Fugiat, mollitia.</p>
                     <a href="./pages/actividades.html" class="botonVerMas">Ver más</a>
                 </article>
-                <article class="cardsArticles">
+                <article class="cardsArticles" data-aos="flip-right" data-aos-duration="1500">
                     <h3 class="titulosActividadesHome">Padel</h3>
                     <p class="parrafoActividadesHome">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis architecto quam deleniti reiciendis iure quasi optio, porro pariatur consequuntur necessitatibus, quibusdam perspiciatis repellendus error fuga.</p>
                     <a href="./pages/actividades.html" class="botonVerMas">Ver más</a>
@@ -81,8 +83,13 @@
     </section>
 
         <!-- PUBLICIDAD -->
-    <aside class="publicidad"> 
-        <p>Visitá a nuestros amigos de JD Sports y llevate lo mejor en calzado e indumentaria deportiva</p>
+    <aside class="publicidad">
+        <article>
+            <img src="./assets/img/TiendaDeportiva5.jpg" alt="asideTienda">
+            <div>
+            <p>Visitá a nuestros amigos de JD Sports y llevate lo mejor en calzado e indumentaria deportiva</p>
+            </div>
+        </article>
     </aside>
 
     <!-- Footer -->
@@ -112,6 +119,11 @@
             <a href="./pages/contacto_reservas.html">CONTACTO Y RESERVAS</a>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>

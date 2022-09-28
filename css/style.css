@@ -468,17 +468,27 @@ margin:1em;
 
 
 /* HTML SERVICIOS */
+.mainServicios {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;   
+    flex-wrap: wrap;
+}
+.cardsServicios {
+    width: 400px;
+    height: 500px;
+}
+.instalaciones {
+    width: 90%;
+}
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .gridContainerServicios {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-areas:
-        "headServicios headServicios headServicios headServicios"
-        "tituloSection tituloSection tituloSection tituloSection"
-        "cumple asado evento evento"
-        "cantina cantina evento evento"
-        "torneos instalaciones evento evento"
-        "galeria galeria galeria galeria"
-        "pieServicios pieServicios pieServicios pieServicios";
     grid-gap: 1em;
 }
 .headServicios {
@@ -487,29 +497,11 @@ margin:1em;
 .tituloSection {
     grid-area: tituloSection;
 }
-.cumple {
-    grid-area: cumple;
-    margin-left: 2em;
-}
-.asado {
-    grid-area: asado;
-    margin-left: 2em;
+.mainServicios {
+    grid-area: mainServicios;
 }
 .evento {
     grid-area: evento;
-    justify-self: center;
-}
-.cantina {
-    grid-area: cantina;
-    margin-left: 2em;
-}
-.torneos {
-    grid-area: torneos;
-    margin-left: 2em;
-}
-.instalaciones {
-    grid-area: instalaciones;
-    margin-left: 2em;
 }
 .galeria {
     grid-area: galeria;
@@ -529,6 +521,7 @@ margin:1em;
     font-size: 2em;
     background-color:black;
     padding-left: 1em;
+    margin: 0.5em;
 }
 .parrafoServicios {
     font-family: 'Kanit', sans-serif;
@@ -541,6 +534,7 @@ margin:1em;
     color: #D4AC0D;
     font-size: 2em;
     padding-left: 1em;
+    margin: 0.5em;
     background-color:black;
 }
 .gridContainerGaleria {
@@ -557,42 +551,181 @@ margin:1em;
     border-radius: 1em;
 }
 .gridItemGaleria1 {
-    grid-column: 1 / 3;
-    grid-row: 1 / 3;
+    grid-area: img-1;
+}
+.gridItemGaleria2 {
+    grid-area: img-2;
+}
+.gridItemGaleria3 {
+    grid-area: img-3;
 }
 .gridItemGaleria4 {
-    grid-column: 3 / 4;
-    grid-row: 3 / 5;
+    grid-area: img-4;
+}
+.gridItemGaleria5 {
+    grid-area: img-5;
 }
 .gridItemGaleria6 {
-    grid-column: 1 / 3;
-    grid-row: 7 / 9;
+    grid-area: img-6;
 }
 .gridItemGaleria7 {
-    grid-column: 2 / 4;
-    grid-row: 5 / 7;
+    grid-area: img-7;
 }
 .gridItemGaleria8 {
-    grid-column: 1 / 2;
-    grid-row: 5 / 7;
+    grid-area: img-8;
 }
 .gridItemGaleria9 {
-    grid-column: 1 / 2;
-    grid-row: 3 / 5;
+    grid-area: img-9;
 }
 .gridItemGaleria10 {
-    grid-column: 3 / 4;
-    grid-row: 7 / 9;
+    grid-area: img-10;
 }
-
 .gridItemGaleria11 {
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
+    grid-area: img-11;
 }
 .gridItemGaleria12 {
-    grid-column: 2 / 3;
-    grid-row: 4 / 5;
+    grid-area: img-12;
 }
+.gridItemGaleria13 {
+    grid-area: img-13;
+}
+.gridItemGaleria14 {
+    grid-area: img-14;
+}
+
+/* MEDIA QUERIES HTML SERVICIOS */
+@media (min-width:576px){
+    .mainServicios {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;   
+        flex-wrap: nowrap;
+    }
+    .cardsServicios {
+        width: 100%;
+        height: 100%;
+    }
+    .headServicios {
+        font-size: 0.6em;
+    }
+    .pieServicios {
+        font-size: 0.6em;
+    }
+    .gridContainerGaleria {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "img-1"
+            "img-2"
+            "img-3"
+            "img-4"
+            "img-5"
+            "img-6"
+            "img-7"
+            "img-8"
+            "img-9"
+            "img-10"
+            "img-11"
+            "img-12"
+            "img-13"
+            "img-14";
+    }
+    .gridContainerServicios {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "headServicios"
+            "tituloSection"
+            "mainServicios"
+            "evento"
+            "galeria"
+            "pieServicios";
+    }
+}
+@media (min-width: 768px) and (max-width: 1199px){
+    .headServicios {
+        font-size: 1em;
+    }
+    .pieServicios {
+        font-size: 1em;
+    }
+    .mainServicios {
+        font-size: 0.8em;
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
+        flex-wrap: wrap;
+    }
+    .cardsServicios {
+        width: 350px;
+        height: max-content;
+    }
+    .instalaciones {
+        width: 90%
+    }
+    .gridContainerGaleria {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+            "img-1 img-1"
+            "img-2 img-4"
+            "img-3 img-4"
+            "img-5 img-6"
+            "img-9 img-7"
+            "img-9 img-8"
+            "img-10 img-11"
+            "img-10 img-12"
+            "img-13 img-14";
+    }
+    .gridContainerServicios {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+            "headServicios headServicios"
+            "tituloSection tituloSection"
+            "mainServicios mainServicios"
+            "evento evento"
+            "galeria galeria"
+            "pieServicios pieServicios";
+    }
+}
+@media (min-width: 1200px) {
+    .headServicios {
+        font-size: 1em;
+    }
+    .pieServicios {
+        font-size: 1em;
+    }
+    .mainServicios {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    aside {
+        margin: 2em
+    }
+    .gridContainerGaleria {
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas: 
+            "img-1 img-1 img-2"
+            "img-1 img-1 img-3"
+            "img-6 img-6 img-4"
+            "img-7 img-8 img-4"
+            "img-9 img-11 img-10"
+            "img-9 img-12 img-10"
+            "img-5 img-5 img-13"
+            "img-5 img-5 img-14";
+    }
+    .gridContainerServicios {
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas: 
+            "headServicios headServicios headServicios"
+            "tituloSection tituloSection tituloSection"
+            "mainServicios mainServicios evento"
+            "mainServicios mainServicios evento"
+            "galeria galeria galeria"
+            "pieServicios pieServicios pieServicios";
+    }
 
 
 

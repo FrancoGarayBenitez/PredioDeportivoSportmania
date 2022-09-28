@@ -468,25 +468,6 @@ margin:1em;
 
 
 /* HTML SERVICIOS */
-.mainServicios {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;   
-    flex-wrap: wrap;
-}
-.cardsServicios {
-    width: 400px;
-    height: 500px;
-}
-.instalaciones {
-    width: 90%;
-}
-aside {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .gridContainerServicios {
     display: grid;
     grid-gap: 1em;
@@ -539,7 +520,6 @@ aside {
 }
 .gridContainerGaleria {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
     grid-auto-rows: 350px;
     padding: 2em;
     grid-gap: 1em;
@@ -605,6 +585,13 @@ aside {
         width: 100%;
         height: 100%;
     }
+    aside {
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     .headServicios {
         font-size: 0.6em;
     }
@@ -664,6 +651,13 @@ aside {
     .instalaciones {
         width: 90%
     }
+    aside {
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     .gridContainerGaleria {
         grid-template-columns: repeat(2,1fr);
         grid-template-areas: 
@@ -702,7 +696,11 @@ aside {
         align-items: center;
     }
     aside {
-        margin: 2em
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     .gridContainerGaleria {
         grid-template-columns: repeat(3,1fr);

@@ -338,7 +338,7 @@ footer div a:hover {
     grid-area: pie;
 }
     /* MEDIA QUERIES MOBILE FIRST */
-@media (min-width: 576px){
+@media (max-width: 576px){
     .head ul li a {
         font-size: 1em;
     }
@@ -651,7 +651,7 @@ footer div a:hover {
 }
 
 /* MEDIA QUERIES HTML SERVICIOS */
-@media (min-width:576px) and (max-width: 767px){
+@media (max-width:576px) {
     .mainServicios {
         display: flex;
         flex-direction: column;
@@ -667,7 +667,7 @@ footer div a:hover {
         font-size: 1em;
     }
     .pieServicios {
-        font-size: 1em;
+        font-size: 0.8em;
     }
     .gridContainerGaleria {
         grid-template-columns: 1fr;

@@ -327,7 +327,7 @@ footer nav a:hover {
     transform: scale(1.1,1.2);
 }
 
-/* MEDIA QUERIES */
+/* MEDIA QUERIES INDEX*/
 @media (max-width:1200px) {
     .gridMainHome {
         display: grid;
@@ -454,6 +454,7 @@ footer nav a:hover {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
+        row-gap: 0.5rem;
     }
     .bannerMain {
         margin-top: 1rem;
@@ -562,7 +563,58 @@ footer nav a:hover {
     border-radius: 2em;
     box-shadow: 5px 8px 12px black;
 }
-
+/* MEDIA QUERIES ACTIVIDADES */
+@media (max-width:1200px) {
+.cardsActividades {
+    display: flex;
+    flex-direction: column;
+}
+.descripcion-imagen {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.cardsActividades div h3 {
+    white-space:unset;
+    width: 100%;
+    padding: 1rem;
+}
+.imagenPresentacion {
+    width: 50%;
+}
+.botonMasFotos {
+    width: 20%;
+    margin-bottom: 10rem;
+}
+}
+@media (max-width:768px) {
+.head {
+    font-size: 0.8rem;
+}
+.parrafoActividades {
+    font-size: 1.5rem;
+}
+.imagenPresentacion {
+    width: 75%;
+}
+}
+@media (min-width:320px) and (max-width:576px) {
+#sectionActividades {
+    font-size: 2rem;
+    text-align: center;
+}
+.cardsActividades {
+    margin: 0 1rem;
+}
+.imagenPresentacion {
+    width: 100%;
+}
+.parrafoActividades {
+    font-size: 1.2rem;
+}
+.botonMasFotos {
+    width: 50%;
+}
+}
 
 /* HTML SERVICIOS */
 .cardsServicios {
@@ -832,7 +884,14 @@ footer nav a:hover {
     .headServicios {
         width: 100%;
         height: 100%;
-        font-size: 1rem;
+        font-size: 0.8rem;
+    }
+    .tituloSection h2 {
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+    .listaServicios {
+        font-size: 0.8rem;
     }
     #footer {
         font-size: 1rem;
@@ -862,13 +921,27 @@ footer nav a:hover {
 main section article ul li {
     list-style-type: none;
 }
-
+@media (max-width: 768px) {
+    .head {
+        font-size: 1.2rem;
+    }
+}
+@media (min-width:320px) and (max-width:576px) {
+    #sectionFaq {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .titulosFaq {
+        font-size: 1.5rem;
+    }
+    .parrafosFaq {
+        font-size: 1rem;
+    }
+}
 
 /* HTML CONTACTO Y RESERVAS */
 .sectionContactoReservas {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    margin: 0 auto;
 }
 #tituloContactoReservas {
     font-family: 'Kanit', sans-serif;
@@ -895,4 +968,31 @@ main section article ul li {
 }
 .mapa {
     margin-top: 2em;
+}
+/* MEDIA QUERIES CONTACTO Y RESERVAS */
+@media (max-width:768px) {
+.head {
+    font-size: 0.8rem;
+}
+.navBar ul {
+    font-size: 1rem;
+}
+.mapa {
+    width: 80%;
+}
+}
+@media (min-width:320px) and (max-width:576px) {
+    .formulario {
+        font-size: 1rem;
+    }
+    .otrosDatos {
+        font-size: 1rem;
+    }
+    #tituloContactoReservas {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .mapa {
+        width: 100%;
+    }
 }

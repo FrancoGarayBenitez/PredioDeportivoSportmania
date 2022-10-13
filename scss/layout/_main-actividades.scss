@@ -1,0 +1,47 @@
+/* HTML ACTIVIDADES */
+.tituloSection {
+    @include letra($fuente-principal,3em,$color-secundario);
+    padding: 1em;
+}
+.cardsActividades {
+    margin: 3em 3em 0em 3em;
+    @include propiedades-flex(row,center,center);
+    div h3 {
+        @include letra($fuente-principal,2em,$color-principal);
+        white-space: pre-line;
+        text-align: $tx-align;
+        width: 3em;
+        padding-bottom: 2em;
+        background-color: $color-secundario;
+    }
+    .descripcion-imagen {
+        @extend .cardsActividades;
+        margin: 0;
+        p {
+            @include letra($fuente-principal,1.5em,$color-secundario);
+            margin: 1em;
+        }
+        img {
+            width: 35%;
+            margin: 1em;
+            box-shadow: $sombreado;
+            border-radius: 2em;
+        }
+    }
+}
+.botonMasFotos {
+    margin: 2em auto 2em auto;
+    width: 10%;
+    text-align: $tx-align;
+    background-color: $color-4;
+    transform: scale(1,1);
+    a {
+        margin: 0 auto;
+        text-align: $tx-align;
+        text-decoration: $decoration;
+        @include letra($fuente-principal,2em,$color-secundario);
+    }
+}
+.botonMasFotos:hover{
+    transform: $hover;
+}

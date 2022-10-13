@@ -1,0 +1,25 @@
+.carousel-inner {
+    @include sizes(90%,700px);
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    box-shadow: $sombreado;
+    .carousel-item {
+        @include sizes(100%,100%);
+        img {
+            @extend .carousel-item;
+            object-fit: cover;
+        }
+        p {
+            width: 100%;
+            margin: 0;
+            @include letra ($fuente-principal,1.8em,$color-terciario);
+            position: absolute;
+            text-align: $tx-align;
+            bottom: 0%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0, 1));
+        }
+    }
+}

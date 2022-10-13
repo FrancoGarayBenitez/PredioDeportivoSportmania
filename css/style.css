@@ -1,998 +1,722 @@
-@import url('https://fonts.googleapis.com/css2?family=Dokdo&family=Kanit:ital,wght@1,300&family=Wallpoet&display=swap');
-
-/* RESET */
+@import url("https://fonts.googleapis.com/css2?family=Dokdo&family=Kanit:ital,wght@1,300&family=Wallpoet&display=swap");
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-body {
-    background-color: #D4AC0D;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 /* HEADER */
-header {
-    background-color:black;
-    width: 100%;
-    height: 15vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .head {
-    grid-area: head;
-}
-.logoTitulo {
+  background-color: black;
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  grid-area: head; }
+  .head .logoTitulo {
     width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.logoTitulo a {
-    text-decoration: none;
-}
-.logo {
-    width: 100%;
-    height: 10rem;
-}
-.sportmania {
-    font-family: 'Wallpoet', cursive;
-    color: #D4AC0D;
-    font-size: 2.4em;
-}
-header nav {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end
-}
-header nav ul {
-    list-style-type: none;
     display: flex;
     flex-direction: row;
-    column-gap: 30px;
-    transform: scale(1,1);
-}
-header nav ul li a {
-    font-family: 'Kanit', sans-serif;
-    text-decoration: none;
-    color: #D4AC0D;
-    font-size: 1.3rem;
-    transform: scale(1,1);
-}
-header nav ul li:hover {
-    transform: scale(1.1,1.1);
-}
-
-/* BIENVENIDA */
-.bannerMain {
-    grid-area: bannerMain;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: center; }
+    .head .logoTitulo a {
+      text-decoration: none; }
+    .head .logoTitulo .logo {
+      width: 100%;
+      height: 10rem; }
+    .head .logoTitulo .sportmania {
+      font-family: 'Wallpoet', cursive;
+      color: #D4AC0D;
+      font-size: 2.4em; }
+  .head nav {
     width: 100%;
     height: 100%;
-    margin: auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-    animation-name: bannerMain;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-}
-@keyframes bannerMain {
-    0%, 30% {
-        background-image: url(../assets/img/futbolBanner1.jpg);
-    }
-    35%, 65% {
-        background-image: url(../assets/img/gymBanner2.jpg);
-    }
-    70%, 100% {
-        background-image: url(../assets/img/padelBanner3.jpg);
-    }
-}
-.bannerMain h2 {
-    font-family: 'Kanit', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end; }
+    .head nav ul {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      column-gap: 30px;
+      transform: scale(1, 1); }
+      .head nav ul li:hover {
+        transform: scale(1.1, 1.1); }
+      .head nav ul li a {
+        font-family: "Kanit", sans-serif;
+        text-decoration: none;
+        color: #D4AC0D;
+        font-size: 1.3rem; }
+
+/* MAIN INDEX */
+body {
+  background-color: #D4AC0D; }
+
+main .bannerMain {
+  grid-area: bannerMain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-name: bannerMain;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  margin: auto; }
+  main .bannerMain h2, main .bannerMain p, main .bannerMain .faq ul li, .faq ul main .bannerMain li, main .bannerMain .faq ol li, .faq ol main .bannerMain li, main .bannerMain .sectionContactoReservas section .formulario, .sectionContactoReservas section main .bannerMain .formulario, main .bannerMain .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section main .bannerMain .otrosDatos {
+    font-family: "Kanit", sans-serif;
     font-size: 4rem;
     color: white;
-    background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0,0,0, 0.4));
-}
-.bannerMain p {
-    font-family: 'Kanit', sans-serif;
-    font-size: 1.5rem;
-    color: white;
-    padding-left: 10em;
-    padding-right: 10em;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)); }
+  main .bannerMain p, main .bannerMain .faq ul li, .faq ul main .bannerMain li, main .bannerMain .faq ol li, .faq ol main .bannerMain li, main .bannerMain .sectionContactoReservas section .formulario, .sectionContactoReservas section main .bannerMain .formulario, main .bannerMain .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section main .bannerMain .otrosDatos {
+    padding: 0em 10em 0em 10em;
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0,0,0, 0.4));
-}
+    font-size: 1.5rem; }
+
+@keyframes bannerMain {
+  0%, 30% {
+    background-image: url(../assets/img/futbolBanner1.jpg); }
+  35%, 65% {
+    background-image: url(../assets/img/gymBanner2.jpg); }
+  70%, 100% {
+    background-image: url(../assets/img/padelBanner3.jpg); } }
+
 .titulosHome {
-    font-family: 'Kanit', sans-serif;
-    color: #D4AC0D;
-    font-size: 3em;
-    margin: 1em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:black;
-    text-align: center;
-}
+  font-family: "Kanit", sans-serif;
+  color: #D4AC0D;
+  font-size: 3em;
+  margin: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  text-align: center; }
 
-/* NOVEDADES */
 .novedades {
-    grid-area: novedades;
-}
-.carousel-inner {
-    width: 90%;
-    height: 700px;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-    box-shadow: 5px 8px 12px black;
-}
-.carousel-item {
-    width: 100%;
-    height: 100%;
-}
-.carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.carousel-item p {
-    width: 100%;
-    margin: 0;;
-    font-family: 'Kanit', sans-serif;
-    font-size: 1.8em;
-    text-align: center;
-    padding: 10px;
-    color: white;
-    position: absolute;
-    bottom: 0%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0, 1));
-}
+  grid-area: novedades; }
 
-/* QUIENES SOMOS */
 .nosotros {
-    margin: 1rem 4rem 4rem 4rem;
-    grid-area: nosotros;
-}
-.parrafoQuienesSomos {
-    font-family: 'Kanit', sans-serif;
+  margin: 1rem 4rem 4rem 4rem;
+  grid-area: nosotros; }
+  .nosotros p, .nosotros .faq ul li, .faq ul .nosotros li, .nosotros .faq ol li, .faq ol .nosotros li, .nosotros .sectionContactoReservas section .formulario, .sectionContactoReservas section .nosotros .formulario, .nosotros .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section .nosotros .otrosDatos {
+    font-family: "Kanit", sans-serif;
     font-size: 2rem;
-}
+    color: black; }
 
-/* NUESTRAS ACTIVIDADES */
 .actividades {
-    margin: 1em;
-    grid-area: actividades;
-}
-.articulosHome {
+  margin: 1em;
+  grid-area: actividades; }
+  .actividades div {
+    width: 100%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-.titulosActividadesHome {
-    font-family: 'Kanit', sans-serif;
-    font-size: 1.5em;
-    color: black;
-}
-.parrafoActividadesHome {
-    font-family: 'Kanit', sans-serif;
-    font-size: 1.2em;
-    color: black;
-}
-.cardsArticles {
-    background-color:#F7DC6F;
-    border-style: dotted;
-    border-color: black;
-    border-width: 0.1em;
-    border-radius: 1em;
-    padding: 2em;
-    margin: 2em;
-    box-shadow: 5px 8px 12px black;
+    align-items: center; }
+    .actividades div .cardsArticles {
+      background-color: #F7DC6F;
+      border-style: dotted;
+      border-color: black;
+      border-width: 0.1em;
+      border-radius: 1em;
+      padding: 2em;
+      margin: 2em;
+      height: 100%;
+      box-shadow: 5px 8px 12px black; }
+      .actividades div .cardsArticles h3, .actividades div .cardsArticles p, .actividades div .cardsArticles .sectionContactoReservas section .formulario, .sectionContactoReservas section .actividades div .cardsArticles .formulario, .actividades div .cardsArticles .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section .actividades div .cardsArticles .otrosDatos, .actividades div .cardsArticles .faq ul li, .faq ul .actividades div .cardsArticles li, .actividades div .cardsArticles .faq ol li, .faq ol .actividades div .cardsArticles li {
+        font-family: "Kanit", sans-serif;
+        font-size: 1.5em;
+        color: black; }
+      .actividades div .cardsArticles p, .actividades div .cardsArticles .faq ul li, .faq ul .actividades div .cardsArticles li, .actividades div .cardsArticles .faq ol li, .faq ol .actividades div .cardsArticles li, .actividades div .cardsArticles .sectionContactoReservas section .formulario, .sectionContactoReservas section .actividades div .cardsArticles .formulario, .actividades div .cardsArticles .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section .actividades div .cardsArticles .otrosDatos {
+        font-size: 1.2em; }
+      .actividades div .cardsArticles a {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-family: "Kanit", sans-serif;
+        font-size: 1.5em;
+        color: #D4AC0D;
+        margin-top: 1em;
+        text-decoration: none;
+        transform: scale(1, 1); }
+      .actividades div .cardsArticles a:hover {
+        transform: scale(1.2, 1.2); }
 
-}
-.botonVerMas {
-    display: flex;
-    justify-content: center;
-    font-family: 'Kanit', sans-serif;
-    font-size: 1.5em;
-    color:#D4AC0D;
-    margin-top: 1em;
-    text-decoration: none;
-    transform: scale(1,1);
-}
-.botonVerMas:hover {
-    transform: scale(1.2,1.2);
-}
-/* PUBLICIDAD */
 .publicidad {
-    grid-area: publicidad;
-    margin-top: 10em;
-    margin-bottom: 4em;
-    width: 100%;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.publicidad div {
+  grid-area: publicidad;
+  margin-top: 10em;
+  padding-bottom: 4em;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .publicidad div {
     position: relative;
     width: 100%;
     height: 100%;
-    box-shadow: 5px 8px 12px black;
-    cursor: pointer;
-}
-.publicidad div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.publicidad div div {
-    font-family: 'Kanit', sans-serif;
-    font-size: 2em;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    color: white;
-    top: 0;
-}
-.publicidad div div p{
-    opacity: 0;
-    visibility: hidden;
-    text-align: center;
-    background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0, 1));
-    margin-top: 0;
-    transition: all 500ms ease-out;
-}
-.publicidad div:hover > div p {
+    box-shadow: 5px 8px 12px black; }
+    .publicidad div img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    .publicidad div div {
+      font-family: "Kanit", sans-serif;
+      font-size: 2em;
+      color: white;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0; }
+      .publicidad div div p, .publicidad div div .faq ul li, .faq ul .publicidad div div li, .publicidad div div .faq ol li, .faq ol .publicidad div div li, .publicidad div div .sectionContactoReservas section .formulario, .sectionContactoReservas section .publicidad div div .formulario, .publicidad div div .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section .publicidad div div .otrosDatos {
+        opacity: 0;
+        visibility: hidden;
+        text-align: center;
+        background: linear-gradient(rgba(255, 255, 255, 0), black);
+        margin-top: 0;
+        transition: all 500ms ease-out; }
+  .publicidad div:hover > div p, .publicidad div:hover > div .faq ul li, .faq ul .publicidad div:hover > div li, .publicidad div:hover > div .faq ol li, .faq ol .publicidad div:hover > div li, .publicidad div:hover > div .sectionContactoReservas section .formulario, .sectionContactoReservas section .publicidad div:hover > div .formulario, .publicidad div:hover > div .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section .publicidad div:hover > div .otrosDatos {
     opacity: 1;
     visibility: visible;
     margin-top: 5em;
-    margin-bottom: 5em;
-}
-/* GRID MAIN */
+    margin-bottom: 5em; }
+
 .gridMainHome {
-    grid-area: gridMainHome;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(3,0.8fr);
-    grid-template-areas:
-        "bannerMain bannerMain bannerMain bannerMain"
-        "nosotros nosotros nosotros actividades"
-        "novedades novedades novedades actividades"
-        "publicidad publicidad publicidad publicidad";
-    grid-gap: 2rem;
-}
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 0.8fr);
+  grid-gap: 2rem;
+  grid-template-areas: "bannerMain bannerMain bannerMain bannerMain" "nosotros nosotros nosotros actividades" "novedades novedades novedades actividades" "publicidad publicidad publicidad publicidad"; }
+
+.carousel-inner {
+  width: 90%;
+  height: 700px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 5px 8px 12px black; }
+  .carousel-inner .carousel-item, .carousel-inner .carousel-item img {
+    width: 100%;
+    height: 100%; }
+    .carousel-inner .carousel-item img {
+      object-fit: cover; }
+    .carousel-inner .carousel-item p, .carousel-inner .carousel-item .faq ul li, .faq ul .carousel-inner .carousel-item li, .carousel-inner .carousel-item .faq ol li, .faq ol .carousel-inner .carousel-item li, .carousel-inner .carousel-item .sectionContactoReservas section .formulario, .sectionContactoReservas section .carousel-inner .carousel-item .formulario, .carousel-inner .carousel-item .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section .carousel-inner .carousel-item .otrosDatos {
+      width: 100%;
+      margin: 0;
+      font-family: "Kanit", sans-serif;
+      font-size: 1.8em;
+      color: white;
+      position: absolute;
+      text-align: center;
+      bottom: 0%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: linear-gradient(rgba(255, 255, 255, 0), black); }
+
+.btn {
+  background-color: black; }
 
 /* FOOTER */
-#footer {
-    width: 100%;
-    background-color:black;
-    background-size: cover;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 2em;
-}
 .pie {
-    grid-area: pie;
-}
-.rrss {
-    grid-area: rrss;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2em; }
+  .pie .rrss {
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
-.redesIconos {
-    margin: 1em;
-    color: #D4AC0D;
-    transform: scale(1,1);
-}
-.redesIconos:hover {
-    transform: scale(1.1,1.1);
-}
-.parrafoFooter {
-    grid-area: parrafoFooter;
-    font-family: 'Kanit', sans-serif;
-    color: #D4AC0D;
+    align-items: center; }
+    .pie .rrss a svg {
+      margin: 1em;
+      color: #D4AC0D;
+      transform: scale(1, 1); }
+    .pie .rrss a svg:hover {
+      transform: scale(1.2, 1.2); }
+  .pie .parrafoFooter {
+    font-family: "Kanit", sans-serif;
     font-size: 1.5em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.enlaces {
-    grid-area: enlaces;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    font-family: 'Kanit', sans-serif;
-    transform: scale(1,1);
-}
-footer nav a {
-    text-decoration: none;
     color: #D4AC0D;
-    font-size: 1.2em;
-    transform: scale(1,1);
-}
-footer nav a:hover {
-    transform: scale(1.1,1.2);
-}
-
-/* MEDIA QUERIES INDEX*/
-@media (max-width:1200px) {
-    .gridMainHome {
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(5,0.7fr);
-        grid-template-areas:
-            "bannerMain bannerMain bannerMain bannerMain"
-            "nosotros nosotros nosotros nosotros"
-            "novedades novedades novedades novedades"
-            "actividades actividades actividades actividades"
-            "publicidad publicidad publicidad publicidad";
-    }
-    .head {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .logoTitulo {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    .bannerMain p {
-        padding: 2rem;
-        text-align: center;
-    }
-    .articulosHome {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    .pie {
-        font-size: 1rem;
-        text-align: center;
-    }
-    .enlaces {
-        row-gap: 1rem;
-    }
-}
-
-@media (max-width:768px) {
-    .gridMainHome {
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(5,0.55fr);
-        grid-template-areas:
-        "bannerMain bannerMain bannerMain bannerMain"
-        "nosotros nosotros nosotros nosotros"
-        "novedades novedades novedades novedades"
-        "actividades actividades actividades actividades"
-        "publicidad publicidad publicidad publicidad";
-    }
-    .head {
-        width: 100%;
-        height: 100%;
-        font-size: 1.2rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .logoTitulo {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    .bannerMain h2 {
-        font-size: 2.2rem;
-    }
-    .bannerMain p {
-        font-size: 1.2rem;
-    }
-    .articulosHome {
-        display: flex;
-        flex-direction: column;
-    }
-    #footer {
-        font-size: 1rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        row-gap: 1rem;
-    }
-    .enlaces {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-@media (min-width:320px) and (max-width:576px) {
-    .gridMainHome {
-        grid-area: gridMainHome;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5,0.1fr);
-        grid-template-areas:
-        "bannerMain"
-        "nosotros"
-        "novedades"
-        "actividades"
-        "publicidad";
-    }
-    .head {
-        width: 100%;
-        height: 100%;
-        font-size: 1rem;
-    }
-    .logoTitulo {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .logo {
-        margin-bottom: -1.5rem;
-    }
-    .navBar ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        row-gap: 0.5rem;
-    }
-    .bannerMain {
-        margin-top: 1rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-    }
-    .bannerMain h2 {
-        font-size: 1.2rem;
-    }
-    .bannerMain p {
-        font-size: 1rem;
-    }
-    .titulosHome {
-        font-size: 1.5rem;
-    }
-    .parrafoQuienesSomos {
-        font-size: 1rem;
-    }
-    .carousel-inner {
-        width: 90%;
-        height: 400px;
-    }
-    .carousel-item p {
-        font-size: 1rem;
-    }
-    .titulosActividadesHome {
-        font-size: 1.5rem;
-
-    }
-    .parrafoActividadesHome {
-        font-size: 1rem;
-    }
-    .publicidad {
-        margin: 1rem 0rem;
-    }
-    .publicidad div div {
-        font-size: 1rem;
-    }
-    #footer {
-        font-size: 1rem;
-        text-align: center;
-    }
-}
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .pie .enlaces {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; }
+    .pie .enlaces a {
+      font-family: "Kanit", sans-serif;
+      font-size: 1.2em;
+      color: #D4AC0D;
+      transform: scale(1, 1);
+      text-decoration: none; }
+    .pie .enlaces a:hover {
+      transform: scale(1.2, 1.2); }
 
 /* HTML ACTIVIDADES */
-#sectionActividades {
-    font-family: 'Kanit', sans-serif;
-    font-size: 3em;
-    margin: 1em;
-}
-.cardsActividades {
-    margin: 3em;
-    margin-bottom: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.cardsActividades div h3 {
-    font-family: 'Kanit', sans-serif;
-    background-color:  black;
+.tituloSection {
+  font-family: "Kanit", sans-serif;
+  font-size: 3em;
+  color: black;
+  padding: 1em; }
+
+.cardsActividades, .cardsActividades .descripcion-imagen {
+  margin: 3em 3em 0em 3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .cardsActividades div h3, .cardsActividades .descripcion-imagen div h3, .cardsActividades .actividades div .cardsArticles p, .actividades .cardsActividades div .cardsArticles p, .cardsActividades .faq ul .actividades div .cardsArticles li, .cardsActividades .faq ol .actividades div .cardsArticles li, .cardsActividades .actividades div .cardsArticles .sectionContactoReservas section .formulario, .actividades .cardsActividades div .cardsArticles .sectionContactoReservas section .formulario, .cardsActividades .sectionContactoReservas section .actividades div .cardsArticles .formulario, .sectionContactoReservas section .actividades .cardsActividades div .cardsArticles .formulario, .cardsActividades .actividades div .cardsArticles .sectionContactoReservas section .otrosDatos, .actividades .cardsActividades div .cardsArticles .sectionContactoReservas section .otrosDatos, .cardsActividades .sectionContactoReservas section .actividades div .cardsArticles .otrosDatos, .sectionContactoReservas section .actividades .cardsActividades div .cardsArticles .otrosDatos, .cardsActividades div .faq p, .faq .cardsActividades div p, .cardsActividades div .faq ul li, .faq ul .cardsActividades div li, .cardsActividades div .faq ol li, .faq ol .cardsActividades div li, .cardsActividades div .faq .sectionContactoReservas section .formulario, .faq .sectionContactoReservas section .cardsActividades div .formulario, .cardsActividades div .sectionContactoReservas section .faq .formulario, .sectionContactoReservas section .faq .cardsActividades div .formulario, .cardsActividades div .faq .sectionContactoReservas section .otrosDatos, .faq .sectionContactoReservas section .cardsActividades div .otrosDatos, .cardsActividades div .sectionContactoReservas section .faq .otrosDatos, .sectionContactoReservas section .faq .cardsActividades div .otrosDatos {
+    font-family: "Kanit", sans-serif;
+    font-size: 2em;
     color: #D4AC0D;
     white-space: pre-line;
-    text-align:center;
-    width:3em;
-    font-size: 2em;
+    text-align: center;
+    width: 3em;
     padding-bottom: 2em;
-}
-.parrafoActividades {
-    font-family: 'Kanit', sans-serif;
-    font-size: 1.5em;
-    margin: 1em;
+    background-color: black; }
+  .cardsActividades .descripcion-imagen {
+    margin: 0; }
+    .cardsActividades .descripcion-imagen p, .cardsActividades .descripcion-imagen .faq ul li, .faq ul .cardsActividades .descripcion-imagen li, .cardsActividades .descripcion-imagen .faq ol li, .faq ol .cardsActividades .descripcion-imagen li, .cardsActividades .descripcion-imagen .sectionContactoReservas section .formulario, .sectionContactoReservas section .cardsActividades .descripcion-imagen .formulario, .cardsActividades .descripcion-imagen .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section .cardsActividades .descripcion-imagen .otrosDatos {
+      font-family: "Kanit", sans-serif;
+      font-size: 1.5em;
+      color: black;
+      margin: 1em; }
+    .cardsActividades .descripcion-imagen img {
+      width: 35%;
+      margin: 1em;
+      box-shadow: 5px 8px 12px black;
+      border-radius: 2em; }
 
-}
 .botonMasFotos {
-    margin-bottom: 2em;
-    text-align: center;
-    background-color: #F7DC6F;
-    width: 10%;
-    margin: 2em auto;
-    transform: scale(1,1);
-}
-.botonMasFotos:hover {
-    transform: scale(1.2,1.2);
-}
-.botonMasFotos a {
-    text-align: center;
+  margin: 2em auto 2em auto;
+  width: 10%;
+  text-align: center;
+  background-color: #F7DC6F;
+  transform: scale(1, 1); }
+  .botonMasFotos a {
     margin: 0 auto;
-    font-size: 2em;
-    font-family: 'Kanit', sans-serif;
-    color: black;
-    text-decoration: none;
-}
-.descripcion-imagen {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.imagenPresentacion {
-    width: 35%;
-    margin:1em;
-    border-radius: 2em;
-    box-shadow: 5px 8px 12px black;
-}
-/* MEDIA QUERIES ACTIVIDADES */
-@media (max-width:1200px) {
-.cardsActividades {
-    display: flex;
-    flex-direction: column;
-}
-.descripcion-imagen {
-    display: flex;
-    flex-direction: column-reverse;
-}
-.cardsActividades div h3 {
-    white-space:unset;
-    width: 100%;
-    padding: 1rem;
-}
-.imagenPresentacion {
-    width: 50%;
-}
-.botonMasFotos {
-    width: 20%;
-    margin-bottom: 10rem;
-}
-}
-@media (max-width:768px) {
-.head {
-    font-size: 0.8rem;
-}
-.parrafoActividades {
-    font-size: 1.5rem;
-}
-.imagenPresentacion {
-    width: 75%;
-}
-}
-@media (min-width:320px) and (max-width:576px) {
-#sectionActividades {
-    font-size: 2rem;
     text-align: center;
-}
-.cardsActividades {
-    margin: 0 1rem;
-}
-.imagenPresentacion {
-    width: 100%;
-}
-.parrafoActividades {
-    font-size: 1.2rem;
-}
-.botonMasFotos {
-    width: 50%;
-}
-}
+    text-decoration: none;
+    font-family: "Kanit", sans-serif;
+    font-size: 2em;
+    color: black; }
+
+.botonMasFotos:hover {
+  transform: scale(1.2, 1.2); }
 
 /* HTML SERVICIOS */
-.cardsServicios {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-.gridMainServicios {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-areas:
-        "listaServicios listaServicios listaServicios evento"
-        "galeria galeria galeria galeria";
-    grid-gap: 5rem;
-}
-.gridMainServicios {
-    grid-area: gridMainServicios;
-}
 .listaServicios {
-    grid-area: listaServicios;
-}
-.evento {
-    width: 100%;
-    grid-area: evento;
+  grid-area: listaServicios; }
+  .listaServicios .cardsServicios {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-right: 5em;
-}
-.evento img {
+    justify-content: flex-start;
+    align-items: center; }
+    .listaServicios .cardsServicios h3, .listaServicios .cardsServicios .actividades div .cardsArticles p, .actividades div .cardsArticles .listaServicios .cardsServicios p, .listaServicios .cardsServicios .actividades div .cardsArticles .sectionContactoReservas section .formulario, .actividades div .cardsArticles .sectionContactoReservas section .listaServicios .cardsServicios .formulario, .listaServicios .cardsServicios .sectionContactoReservas section .actividades div .cardsArticles .formulario, .sectionContactoReservas section .actividades div .cardsArticles .listaServicios .cardsServicios .formulario, .listaServicios .cardsServicios .actividades div .cardsArticles .sectionContactoReservas section .otrosDatos, .actividades div .cardsArticles .sectionContactoReservas section .listaServicios .cardsServicios .otrosDatos, .listaServicios .cardsServicios .sectionContactoReservas section .actividades div .cardsArticles .otrosDatos, .sectionContactoReservas section .actividades div .cardsArticles .listaServicios .cardsServicios .otrosDatos, .listaServicios .cardsServicios .faq p, .faq .listaServicios .cardsServicios p, .listaServicios .cardsServicios .faq ul li, .faq ul .listaServicios .cardsServicios li, .listaServicios .cardsServicios .faq ol li, .faq ol .listaServicios .cardsServicios li, .listaServicios .cardsServicios .faq .sectionContactoReservas section .formulario, .faq .sectionContactoReservas section .listaServicios .cardsServicios .formulario, .listaServicios .cardsServicios .sectionContactoReservas section .faq .formulario, .sectionContactoReservas section .faq .listaServicios .cardsServicios .formulario, .listaServicios .cardsServicios .faq .sectionContactoReservas section .otrosDatos, .faq .sectionContactoReservas section .listaServicios .cardsServicios .otrosDatos, .listaServicios .cardsServicios .sectionContactoReservas section .faq .otrosDatos, .sectionContactoReservas section .faq .listaServicios .cardsServicios .otrosDatos {
+      font-family: "Kanit", sans-serif;
+      font-size: 2em;
+      color: #D4AC0D;
+      background-color: black;
+      margin: 0.5em;
+      padding: 0em 1em;
+      text-align: center; }
+    .listaServicios .cardsServicios p, .listaServicios .cardsServicios .faq ul li, .faq ul .listaServicios .cardsServicios li, .listaServicios .cardsServicios .faq ol li, .faq ol .listaServicios .cardsServicios li, .listaServicios .cardsServicios .sectionContactoReservas section .formulario, .sectionContactoReservas section .listaServicios .cardsServicios .formulario, .listaServicios .cardsServicios .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section .listaServicios .cardsServicios .otrosDatos {
+      font-family: "Kanit", sans-serif;
+      font-size: 1.5em;
+      color: black;
+      margin: 1em; }
+
+.evento {
+  grid-area: evento;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5em; }
+  .evento img {
+    width: 80%;
     box-shadow: 5px 8px 12px black;
-    transform: scale(1,1);
-    transition: transform 300ms;
-}
-.evento img:hover {
-    transform: scale(1.02,1);
-}
+    transform: scale(1, 1);
+    transition: transform 300ms; }
+  .evento img:hover {
+    transform: scale(1.02, 1); }
+
 .galeria {
-    grid-area: galeria;
-}
-.pieServicios {
-    grid-area: pieServicios;
-}
-.tituloSection h2 {
-    font-family: 'Kanit', sans-serif;
-    font-size: 3em;
-    text-align: center;
-}
-.titulosServicios {
-    font-family: 'Kanit', sans-serif;
-    color: #D4AC0D;
+  grid-area: galeria; }
+  .galeria h2, .galeria main .bannerMain p, main .bannerMain .galeria p, .galeria main .bannerMain .faq ul li, main .bannerMain .faq ul .galeria li, .galeria .faq ul main .bannerMain li, .faq ul main .bannerMain .galeria li, .galeria main .bannerMain .faq ol li, main .bannerMain .faq ol .galeria li, .galeria .faq ol main .bannerMain li, .faq ol main .bannerMain .galeria li, .galeria main .bannerMain .sectionContactoReservas section .formulario, main .bannerMain .sectionContactoReservas section .galeria .formulario, .galeria .sectionContactoReservas section main .bannerMain .formulario, .sectionContactoReservas section main .bannerMain .galeria .formulario, .galeria main .bannerMain .sectionContactoReservas section .otrosDatos, main .bannerMain .sectionContactoReservas section .galeria .otrosDatos, .galeria .sectionContactoReservas section main .bannerMain .otrosDatos, .sectionContactoReservas section main .bannerMain .galeria .otrosDatos {
+    font-family: "Kanit", sans-serif;
     font-size: 2em;
-    background-color:black;
-    padding-left: 1em;
-    padding-right: 1em;
-    margin: 0.5em;
-    text-align: center;
-}
-.parrafoServicios {
-    font-family: 'Kanit', sans-serif;
-    font-size: 1.5em;
-    margin: 1em;
-}
-/* GRID GALERIA */
-.tituloGaleria{
-    font-family: 'Kanit', sans-serif;
     color: #D4AC0D;
-    font-size: 2em;
-    padding-left: 1em;
     margin: 0.5em;
-    background-color:black;
-}
+    background-color: black;
+    padding-left: 1em; }
+
 .gridContainerGaleria {
-    width: 100%;
-    display: grid;
-    grid-auto-rows: 350px;
-    padding: 4em;
-    grid-gap: 1em;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-areas:
-        "img-1 img-1 img-2"
-        "img-1 img-1 img-3"
-        "img-6 img-6 img-4"
-        "img-7 img-8 img-4"
-        "img-9 img-11 img-10"
-        "img-9 img-12 img-10"
-        "img-5 img-5 img-13"
-        "img-5 img-5 img-14";
-}
-.galeriaImg {
+  width: 100%;
+  padding: 4em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(8, 350px);
+  grid-gap: 1em;
+  grid-auto-rows: 350px;
+  grid-template-areas: "img-1 img-1 img-2" "img-1 img-1 img-3" "img-6 img-6 img-4" "img-7 img-8 img-4" "img-9 img-11 img-10" "img-9 img-12 img-10" "img-5 img-5 img-13" "img-5 img-5 img-14"; }
+  .gridContainerGaleria div img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 1em;
     border-style: solid;
     border-color: #F7DC6F;
-    transform: scale(1,1);
-    transition: transform 500ms;
-}
-.galeriaImg:hover {
-    transform: scale(1.04,1.04);
-}
-.gridItemGaleria1 {
-    grid-area: img-1;
-}
-.gridItemGaleria2 {
-    grid-area: img-2;
-}
-.gridItemGaleria3 {
-    grid-area: img-3;
-}
-.gridItemGaleria4 {
-    grid-area: img-4;
-}
-.gridItemGaleria5 {
-    grid-area: img-5;
-}
-.gridItemGaleria6 {
-    grid-area: img-6;
-}
-.gridItemGaleria7 {
-    grid-area: img-7;
-}
-.gridItemGaleria8 {
-    grid-area: img-8;
-}
-.gridItemGaleria9 {
-    grid-area: img-9;
-}
-.gridItemGaleria10 {
-    grid-area: img-10;
-}
-.gridItemGaleria11 {
-    grid-area: img-11;
-}
-.gridItemGaleria12 {
-    grid-area: img-12;
-}
-.gridItemGaleria13 {
-    grid-area: img-13;
-}
-.gridItemGaleria14 {
-    grid-area: img-14;
-}
+    border-width: 0.1em;
+    border-radius: 1em;
+    transform: scale(1, 1);
+    transition: transform 500ms; }
+  .gridContainerGaleria div img:hover {
+    transform: scale(1.04, 1.04); }
+  .gridContainerGaleria .gridItemGaleria1 {
+    grid-area: img-1; }
+  .gridContainerGaleria .gridItemGaleria2 {
+    grid-area: img-2; }
+  .gridContainerGaleria .gridItemGaleria3 {
+    grid-area: img-3; }
+  .gridContainerGaleria .gridItemGaleria4 {
+    grid-area: img-4; }
+  .gridContainerGaleria .gridItemGaleria5 {
+    grid-area: img-5; }
+  .gridContainerGaleria .gridItemGaleria6 {
+    grid-area: img-6; }
+  .gridContainerGaleria .gridItemGaleria7 {
+    grid-area: img-7; }
+  .gridContainerGaleria .gridItemGaleria8 {
+    grid-area: img-8; }
+  .gridContainerGaleria .gridItemGaleria9 {
+    grid-area: img-9; }
+  .gridContainerGaleria .gridItemGaleria10 {
+    grid-area: img-10; }
+  .gridContainerGaleria .gridItemGaleria11 {
+    grid-area: img-11; }
+  .gridContainerGaleria .gridItemGaleria12 {
+    grid-area: img-12; }
+  .gridContainerGaleria .gridItemGaleria13 {
+    grid-area: img-13; }
+  .gridContainerGaleria .gridItemGaleria14 {
+    grid-area: img-14; }
 
-/* MEDIA QUERIES HTML SERVICIOS */
-@media (max-width: 1200px) {
-    .gridContainerGaleria {
-        grid-template-columns: repeat(2,1fr);
-        grid-template-areas:
-            "img-1 img-1"
-            "img-2 img-4"
-            "img-3 img-4"
-            "img-5 img-6"
-            "img-9 img-7"
-            "img-9 img-8"
-            "img-10 img-11"
-            "img-10 img-12"
-            "img-13 img-14";
-    }
-    .gridMainServicios {
-        grid-template-columns: repeat(3,1fr);
-        grid-template-areas: 
-            "listaServicios listaServicios listaServicios"
-            "evento evento evento"
-            "galeria galeria galeria";
-    }
-    .listaServicios {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-    .cardsServicios {
-        width: 350px;
-    }
-    .headServicios {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .pieServicios {
-        font-size: 0.8rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .gridContainerGaleria {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "img-1"
-            "img-2"
-            "img-3"
-            "img-4"
-            "img-5"
-            "img-6"
-            "img-7"
-            "img-8"
-            "img-9"
-            "img-10"
-            "img-11"
-            "img-12"
-            "img-13"
-            "img-14";
-    }
-    .listaServicios {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .cardsServicios {
-        width: 100%;
-    }
-    .evento {
-        width: 80%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .evento img {
-        width: 100%;
-    }
-    .headServicios {
-        width: 100%;
-        height: 100%;
-        font-size: 0.8rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .navBar ul li a {
-       font-size: 1rem; 
-    }
-}
-@media (min-width:320px) and (max-width:576px) {
-    .gridContainerGaleria {
-        width: 100%;
-        padding: 0;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "img-1"
-            "img-2"
-            "img-3"
-            "img-4"
-            "img-5"
-            "img-6"
-            "img-7"
-            "img-8"
-            "img-9"
-            "img-10"
-            "img-11"
-            "img-12"
-            "img-13"
-            "img-14";
-    }
-    .headServicios {
-        width: 100%;
-        height: 100%;
-        font-size: 0.8rem;
-    }
-    .tituloSection h2 {
-        font-size: 2rem;
-        margin-top: 1rem;
-    }
-    .listaServicios {
-        font-size: 0.8rem;
-    }
-    #footer {
-        font-size: 1rem;
-    }
-}
-
-
-
+.gridMainServicios {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 0.2fr);
+  grid-gap: 5rem;
+  grid-template-areas: "listaServicios listaServicios evento evento" "galeria galeria galeria galeria"; }
 
 /* HTML PREGUNTAS FRECUENTES */
-#sectionFaq {
-    font-family: 'Kanit', sans-serif;
-    font-size: 3em;
-    margin: 1em;
-}
 .faq {
-    margin: 2em;
-}
-.titulosFaq {
-    font-family: 'Kanit', sans-serif;
+  margin: 2em; }
+  .faq h3, .faq .actividades div .cardsArticles p, .actividades div .cardsArticles .faq p, .actividades div .cardsArticles .faq ul li, .faq ul .actividades div .cardsArticles li, .actividades div .cardsArticles .faq ol li, .faq ol .actividades div .cardsArticles li, .faq p, .faq ul li, .faq ol li, .faq .sectionContactoReservas section .formulario, .sectionContactoReservas section .faq .formulario, .faq .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section .faq .otrosDatos {
+    font-family: "Kanit", sans-serif;
     font-size: 2em;
-}
-.parrafosFaq {
-    font-family: 'Kanit', sans-serif;
-    font-size: 1.2em;
-}
-main section article ul li {
-    list-style-type: none;
-}
-@media (max-width: 768px) {
-    .head {
-        font-size: 1.2rem;
-    }
-}
-@media (min-width:320px) and (max-width:576px) {
-    #sectionFaq {
-        font-size: 2rem;
-        text-align: center;
-    }
-    .titulosFaq {
-        font-size: 1.5rem;
-    }
-    .parrafosFaq {
-        font-size: 1rem;
-    }
-}
+    color: black; }
+  .faq p, .faq ul li, .faq ol li, .faq .sectionContactoReservas section .formulario, .sectionContactoReservas section .faq .formulario, .faq .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section .faq .otrosDatos {
+    font-size: 1.2em; }
+  .faq ul li {
+    list-style: none; }
 
 /* HTML CONTACTO Y RESERVAS */
 .sectionContactoReservas {
-    margin: 0 auto;
-}
-#tituloContactoReservas {
-    font-family: 'Kanit', sans-serif;
-    font-size: 3em;
-    margin: 1em;
-}
-.parrafoReserva {
-    font-family: 'Kanit', sans-serif;
+  margin: 0rem auto; }
+  .sectionContactoReservas section p, .sectionContactoReservas section .faq ul li, .faq ul .sectionContactoReservas section li, .sectionContactoReservas section .faq ol li, .faq ol .sectionContactoReservas section li, .sectionContactoReservas section .formulario, .sectionContactoReservas section .otrosDatos {
+    font-family: "Kanit", sans-serif;
     font-size: 1.2em;
-    margin-left: 1em;
-}
-.formulario {
-    font-family: 'Kanit', sans-serif;
+    color: black;
+    margin-left: 1em; }
+  .sectionContactoReservas section .formulario, .sectionContactoReservas section .otrosDatos {
     font-size: 1.5em;
+    margin: 2em;
     display: flex;
     flex-direction: column;
-    margin: 2em;
-}
-.otrosDatos {
-    font-family: 'Kanit', sans-serif;
-    font-size: 1.5em;
-    margin-top: 8em;
-    margin-bottom: 2em;
-}
-.mapa {
-    margin-top: 2em;
-}
-/* MEDIA QUERIES CONTACTO Y RESERVAS */
-@media (max-width:768px) {
-.head {
-    font-size: 0.8rem;
-}
-.navBar ul {
+    justify-content: center;
+    align-items: center; }
+    .sectionContactoReservas section .formulario input, .sectionContactoReservas section .otrosDatos input {
+      width: 90%; }
+    .sectionContactoReservas section .formulario textarea, .sectionContactoReservas section .otrosDatos textarea {
+      width: 90%; }
+  .sectionContactoReservas .otrosDatos {
+    margin: 12em 0em 2em 0em; }
+    .sectionContactoReservas .otrosDatos .mapa {
+      width: 90%;
+      margin-top: 2em; }
+
+/* MEDIA QUERIES INDEX*/
+@media (max-width: 1200px) {
+  .gridMainHome {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 0.5fr);
+    grid-gap: 2rem;
+    grid-template-areas: "bannerMain bannerMain bannerMain bannerMain" "nosotros nosotros nosotros nosotros" "novedades novedades novedades novedades" "actividades actividades actividades actividades" "publicidad publicidad publicidad publicidad"; }
+  .head {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .head .logoTitulo {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+  main .bannerMain p, main .bannerMain .faq ul li, .faq ul main .bannerMain li, main .bannerMain .faq ol li, .faq ol main .bannerMain li, main .bannerMain .sectionContactoReservas section .formulario, .sectionContactoReservas section main .bannerMain .formulario, main .bannerMain .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section main .bannerMain .otrosDatos {
+    padding: 2rem;
+    text-align: center; }
+  .actividades div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 4rem; }
+    .actividades div .cardsArticles {
+      width: 350px;
+      height: 400px; }
+  .pie {
     font-size: 1rem;
-}
-.mapa {
+    text-align: center; }
+  .enlaces {
+    row-gap: 1rem; } }
+
+@media (max-width: 768px) {
+  .gridMainHome {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 0.45fr);
+    grid-template-areas: "bannerMain bannerMain bannerMain bannerMain" "nosotros nosotros nosotros nosotros" "novedades novedades novedades novedades" "actividades actividades actividades actividades" "publicidad publicidad publicidad publicidad"; }
+  .head {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem; }
+    .head .logoTitulo {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+    .head nav ul {
+      text-align: center; }
+    .head nav ul li a {
+      font-size: 1rem; }
+  main .bannerMain h2, main .bannerMain p, main .bannerMain .faq ul li, .faq ul main .bannerMain li, main .bannerMain .faq ol li, .faq ol main .bannerMain li, main .bannerMain .sectionContactoReservas section .formulario, .sectionContactoReservas section main .bannerMain .formulario, main .bannerMain .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section main .bannerMain .otrosDatos {
+    font-size: 3rem; }
+  main .bannerMain p, main .bannerMain .faq ul li, .faq ul main .bannerMain li, main .bannerMain .faq ol li, .faq ol main .bannerMain li, main .bannerMain .sectionContactoReservas section .formulario, .sectionContactoReservas section main .bannerMain .formulario, main .bannerMain .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section main .bannerMain .otrosDatos {
+    font-size: 1rem; }
+  .titulosHome {
+    font-size: 2rem; }
+  .nosotros p, .nosotros .faq ul li, .faq ul .nosotros li, .nosotros .faq ol li, .faq ol .nosotros li, .nosotros .sectionContactoReservas section .formulario, .sectionContactoReservas section .nosotros .formulario, .nosotros .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section .nosotros .otrosDatos {
+    font-size: 1.8rem; }
+  .actividades {
+    margin-top: 10rem; }
+    .actividades div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap; }
+      .actividades div .cardsArticles {
+        width: 90%; }
+  .pie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+    font-size: 1rem; } }
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .gridMainHome {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 0.1fr);
+    grid-template-areas: "bannerMain" "nosotros" "novedades" "actividades" "publicidad"; }
+  .head {
+    font-size: 1rem; }
+    .head .logoTitulo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .head .logoTitulo .logo {
+        margin-bottom: -1.5rem; }
+    .head nav ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      row-gap: 0.5rem; }
+  main .bannerMain {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%; }
+    main .bannerMain h2, main .bannerMain p, main .bannerMain .faq ul li, .faq ul main .bannerMain li, main .bannerMain .faq ol li, .faq ol main .bannerMain li, main .bannerMain .sectionContactoReservas section .formulario, .sectionContactoReservas section main .bannerMain .formulario, main .bannerMain .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section main .bannerMain .otrosDatos {
+      font-size: 1.4rem;
+      margin: 4rem 0rem 0rem 0rem; }
+    main .bannerMain p, main .bannerMain .faq ul li, .faq ul main .bannerMain li, main .bannerMain .faq ol li, .faq ol main .bannerMain li, main .bannerMain .sectionContactoReservas section .formulario, .sectionContactoReservas section main .bannerMain .formulario, main .bannerMain .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section main .bannerMain .otrosDatos {
+      font-size: 0.9rem;
+      margin: 1rem 0rem 4rem 0rem; }
+  .titulosHome {
+    font-size: 1.5rem; }
+  .nosotros p, .nosotros .faq ul li, .faq ul .nosotros li, .nosotros .faq ol li, .faq ol .nosotros li, .nosotros .sectionContactoReservas section .formulario, .sectionContactoReservas section .nosotros .formulario, .nosotros .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section .nosotros .otrosDatos {
+    font-size: 1rem; }
+  .carousel-inner {
+    width: 90%;
+    height: 400px; }
+    .carousel-inner .carousel-item p, .carousel-inner .carousel-item .faq ul li, .faq ul .carousel-inner .carousel-item li, .carousel-inner .carousel-item .faq ol li, .faq ol .carousel-inner .carousel-item li, .carousel-inner .carousel-item .sectionContactoReservas section .formulario, .sectionContactoReservas section .carousel-inner .carousel-item .formulario, .carousel-inner .carousel-item .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section .carousel-inner .carousel-item .otrosDatos {
+      font-size: 1rem; }
+  .actividades div .cardsArticles h3, .actividades div .cardsArticles p, .actividades div .cardsArticles .sectionContactoReservas section .formulario, .sectionContactoReservas section .actividades div .cardsArticles .formulario, .actividades div .cardsArticles .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section .actividades div .cardsArticles .otrosDatos, .actividades div .cardsArticles .faq ul li, .faq ul .actividades div .cardsArticles li, .actividades div .cardsArticles .faq ol li, .faq ol .actividades div .cardsArticles li {
+    font-size: 1.5rem; }
+  .actividades div .cardsArticles p, .actividades div .cardsArticles .faq ul li, .faq ul .actividades div .cardsArticles li, .actividades div .cardsArticles .faq ol li, .faq ol .actividades div .cardsArticles li, .actividades div .cardsArticles .sectionContactoReservas section .formulario, .sectionContactoReservas section .actividades div .cardsArticles .formulario, .actividades div .cardsArticles .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section .actividades div .cardsArticles .otrosDatos {
+    font-size: 1rem; }
+  .publicidad {
+    margin: 1rem 0rem; }
+    .publicidad div div {
+      font-size: 1rem; }
+  .pie {
+    font-size: 1rem; } }
+
+/* MEDIA QUERIES HTML ACTIVIDADES*/
+@media (max-width: 1200px) {
+  .cardsActividades, .cardsActividades .descripcion-imagen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .cardsActividades .descripcion-imagen {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center; }
+      .cardsActividades .descripcion-imagen img {
+        width: 50%; }
+    .cardsActividades div h3, .cardsActividades .descripcion-imagen div h3, .cardsActividades .actividades div .cardsArticles p, .actividades .cardsActividades div .cardsArticles p, .cardsActividades .faq ul .actividades div .cardsArticles li, .cardsActividades .faq ol .actividades div .cardsArticles li, .cardsActividades .actividades div .cardsArticles .sectionContactoReservas section .formulario, .actividades .cardsActividades div .cardsArticles .sectionContactoReservas section .formulario, .cardsActividades .sectionContactoReservas section .actividades div .cardsArticles .formulario, .sectionContactoReservas section .actividades .cardsActividades div .cardsArticles .formulario, .cardsActividades .actividades div .cardsArticles .sectionContactoReservas section .otrosDatos, .actividades .cardsActividades div .cardsArticles .sectionContactoReservas section .otrosDatos, .cardsActividades .sectionContactoReservas section .actividades div .cardsArticles .otrosDatos, .sectionContactoReservas section .actividades .cardsActividades div .cardsArticles .otrosDatos, .cardsActividades div .faq p, .faq .cardsActividades div p, .cardsActividades div .faq ul li, .faq ul .cardsActividades div li, .cardsActividades div .faq ol li, .faq ol .cardsActividades div li, .cardsActividades div .faq .sectionContactoReservas section .formulario, .faq .sectionContactoReservas section .cardsActividades div .formulario, .cardsActividades div .sectionContactoReservas section .faq .formulario, .sectionContactoReservas section .faq .cardsActividades div .formulario, .cardsActividades div .faq .sectionContactoReservas section .otrosDatos, .faq .sectionContactoReservas section .cardsActividades div .otrosDatos, .cardsActividades div .sectionContactoReservas section .faq .otrosDatos, .sectionContactoReservas section .faq .cardsActividades div .otrosDatos {
+      white-space: unset;
+      width: 100%;
+      padding: 1rem; }
+  .botonMasFotos {
+    width: 20%;
+    margin-bottom: 10rem; } }
+
+@media (max-width: 768px) {
+  .cardsActividades .descripcion-imagen p, .cardsActividades .descripcion-imagen .faq ul li, .faq ul .cardsActividades .descripcion-imagen li, .cardsActividades .descripcion-imagen .faq ol li, .faq ol .cardsActividades .descripcion-imagen li, .cardsActividades .descripcion-imagen .sectionContactoReservas section .formulario, .sectionContactoReservas section .cardsActividades .descripcion-imagen .formulario, .cardsActividades .descripcion-imagen .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section .cardsActividades .descripcion-imagen .otrosDatos {
+    font-size: 1.2rem; }
+  .cardsActividades .descripcion-imagen img {
+    width: 75%; } }
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .tituloSection {
+    font-size: 2rem;
+    text-align: center; }
+  .cardsActividades, .cardsActividades .descripcion-imagen {
+    margin: 0rem 1rem; }
+    .cardsActividades .descripcion-imagen img {
+      width: 100%; }
+    .cardsActividades .descripcion-imagen p, .cardsActividades .descripcion-imagen .faq ul li, .faq ul .cardsActividades .descripcion-imagen li, .cardsActividades .descripcion-imagen .faq ol li, .faq ol .cardsActividades .descripcion-imagen li, .cardsActividades .descripcion-imagen .sectionContactoReservas section .formulario, .sectionContactoReservas section .cardsActividades .descripcion-imagen .formulario, .cardsActividades .descripcion-imagen .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section .cardsActividades .descripcion-imagen .otrosDatos {
+      font-size: 1rem; }
+  .botonMasFotos {
+    width: 50%; } }
+
+/* MEDIA QUERIES HTML SERVICIOS */
+@media (max-width: 1200px) {
+  .gridContainerGaleria {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "img-1 img-1" "img-2 img-4" "img-3 img-4" "img-5 img-6" "img-9 img-7" "img-9 img-8" "img-10 img-11" "img-10 img-12" "img-13 img-14"; }
+  .gridMainServicios {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "listaServicios listaServicios listaServicios" "evento evento evento" "galeria galeria galeria"; }
+  .listaServicios {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    .listaServicios .cardsServicios {
+      width: 350px; }
+  .evento {
+    margin: 0 auto; }
+    .evento img {
+      width: 80%; } }
+
+@media (max-width: 768px) {
+  .gridContainerGaleria {
+    grid-template-columns: 1fr;
+    grid-template-areas: "img-1" "img-2" "img-3" "img-4" "img-5" "img-6" "img-7" "img-8" "img-9" "img-10" "img-11" "img-12" "img-13" "img-14"; }
+  .listaServicios {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .listaServicios .cardsServicios {
+      width: 100%; }
+  .evento {
     width: 80%;
-}
-}
-@media (min-width:320px) and (max-width:576px) {
-    .formulario {
-        font-size: 1rem;
-    }
-    .otrosDatos {
-        font-size: 1rem;
-    }
-    #tituloContactoReservas {
-        font-size: 2rem;
-        text-align: center;
-    }
-    .mapa {
-        width: 100%;
-    }
-}
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .evento img {
+      width: 100%; } }
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .gridContainerGaleria {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    grid-template-columns: 1fr;
+    grid-template-areas: "img-1" "img-2" "img-3" "img-4" "img-5" "img-6" "img-7" "img-8" "img-9" "img-10" "img-11" "img-12" "img-13" "img-14"; }
+  .listaServicios {
+    font-size: 0.8rem; } }
+
+/* MEDIA QUERIES HTML PREGUNTAS FRECUENTES */
+@media (min-width: 320px) and (max-width: 576px) {
+  .faq h3, .faq .actividades div .cardsArticles p, .actividades div .cardsArticles .faq p, .actividades div .cardsArticles .faq ul li, .faq ul .actividades div .cardsArticles li, .actividades div .cardsArticles .faq ol li, .faq ol .actividades div .cardsArticles li, .faq p, .faq ul li, .faq ol li, .faq .sectionContactoReservas section .formulario, .sectionContactoReservas section .faq .formulario, .faq .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section .faq .otrosDatos {
+    font-size: 1.5rem; }
+  .faq p, .faq ul li, .faq ol li, .faq .sectionContactoReservas section .formulario, .sectionContactoReservas section .faq .formulario, .faq .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section .faq .otrosDatos {
+    font-size: 1rem; } }
+
+/* MEDIA QUERIES CONTACTO Y RESERVAS */
+@media (max-width: 768px) {
+  .otrosDatos .mapa {
+    width: 80%; } }
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .sectionContactoReservas section .formulario, .sectionContactoReservas section .otrosDatos {
+    font-size: 1rem; }
+  .otrosDatos {
+    font-size: 1rem; }
+    .otrosDatos .mapa {
+      width: 100%; } }

@@ -1,0 +1,33 @@
+/* FOOTER */
+.pie {
+    width: 100%;
+    background-color: $color-secundario;
+    @include propiedades-flex(row,space-around,center);
+    padding: 2em;
+    .rrss {
+        @include propiedades-flex(row,center,center);
+        a svg {
+            margin: 1em;
+            color: $color-principal;
+            transform: scale(1,1);
+        }
+        a svg:hover {
+            transform: $hover;
+        }
+    }
+    .parrafoFooter {
+        @include letra($fuente-principal,1.5em,$color-principal);
+        @include propiedades-flex(column,center,center);
+    }
+    .enlaces {
+        @include propiedades-flex(column,flex-start,center);
+        a {
+            @include letra($fuente-principal,1.2em,$color-principal);
+            transform: scale(1,1);
+            text-decoration: $decoration;
+        }
+        a:hover {
+            transform: $hover;
+        }
+    }
+}

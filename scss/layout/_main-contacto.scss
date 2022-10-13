@@ -1,0 +1,28 @@
+/* HTML CONTACTO Y RESERVAS */
+.sectionContactoReservas {
+    margin: 0rem auto;
+    section p {
+        @include letra($fuente-principal,1.2em,$color-secundario);
+        margin-left: 1em;
+    }
+    section .formulario {
+        @extend p;
+        font-size: 1.5em;
+        margin: 2em;
+        @include propiedades-flex(column,center,center);
+        input {
+            width: 90%;
+        }
+        textarea {
+            width: 90%;
+        }
+    }
+    .otrosDatos {
+        @extend .formulario;
+        margin:12em 0em 2em 0em;
+        .mapa {
+            width: 90%;
+            margin-top: 2em;
+        }
+    }
+}

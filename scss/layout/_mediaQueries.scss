@@ -1,0 +1,376 @@
+/* MEDIA QUERIES INDEX*/
+@media (max-width:1200px) {
+    .gridMainHome {
+        @include propiedades-grid(repeat(4,1fr),repeat(5,0.5fr),2rem);
+        grid-template-areas: 
+        "bannerMain bannerMain bannerMain bannerMain"
+        "nosotros nosotros nosotros nosotros"
+        "novedades novedades novedades novedades"
+        "actividades actividades actividades actividades"
+        "publicidad publicidad publicidad publicidad";
+    }
+    .head {
+        @include sizes(100%,100%);
+        @include propiedades-flex(column,center,center);
+        .logoTitulo {
+            @include propiedades-flex(row,center,center);
+        }
+    }
+    main {
+        .bannerMain {
+            p {
+                padding: 2rem;
+                text-align: center;
+            }
+        }
+    }
+    .actividades {
+        div {
+            width: 100%;
+            @include propiedades-flex(row,space-around,center);
+            flex-wrap: wrap;
+            margin-top: 4rem;
+            .cardsArticles {
+                width: 350px;
+                height: 400px;
+            }
+        }
+    }
+    .pie {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .enlaces {
+        row-gap: 1rem;
+    }
+}
+@media (max-width:768px) {
+    .gridMainHome {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(5,0.45fr);
+        grid-template-areas:
+        "bannerMain bannerMain bannerMain bannerMain"
+        "nosotros nosotros nosotros nosotros"
+        "novedades novedades novedades novedades"
+        "actividades actividades actividades actividades"
+        "publicidad publicidad publicidad publicidad";
+    }
+    .head {
+        @include sizes(100%,100%);
+        @include propiedades-flex(column,center,center);
+        font-size: 1rem;
+        .logoTitulo {
+            @include propiedades-flex(row,center,center);
+        }
+        nav ul {
+            text-align: center;
+        }
+        nav ul li a {
+            font-size: 1rem;
+        }
+    }
+    main {
+        .bannerMain {
+            h2 {
+                font-size: 3rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+    .titulosHome {
+        font-size: 2rem;
+    }
+    .nosotros p {
+        font-size: 1.8rem;
+    }
+    .actividades {
+        margin-top: 10rem;
+        div {
+            @include propiedades-flex(column,center,center);
+            flex-wrap: nowrap;
+            .cardsArticles {
+                width: 90%;
+            }
+        }
+    }
+    .pie {
+        @include propiedades-flex(column,center,center);
+        row-gap: 1rem;
+        font-size: 1rem;
+    }
+}
+@media (min-width:320px) and (max-width:576px) {
+    .gridMainHome {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5,0.1fr);
+        grid-template-areas:
+        "bannerMain"
+        "nosotros"
+        "novedades"
+        "actividades"
+        "publicidad";
+    }
+    .head {
+        font-size: 1rem;
+        .logoTitulo {
+            @include propiedades-flex(column,center,center);
+            .logo {
+                margin-bottom: -1.5rem;
+            }
+        }
+        nav ul {
+            @include propiedades-flex(column,flex-start,flex-start);
+            row-gap: 0.5rem;
+        }
+    }
+    main {
+        .bannerMain {
+            margin-top: 1rem;
+            @include propiedades-flex(column,center,center);
+            @include sizes(100%,100%);
+            h2 {
+                font-size: 1.4rem;
+                margin: 4rem 0rem 0rem 0rem;
+            }
+            p {
+                font-size: 0.9rem;
+                margin: 1rem 0rem 4rem 0rem;
+            }
+        }
+    }
+    .titulosHome {
+        font-size: 1.5rem;
+    }
+    .nosotros {
+        p {
+            font-size: 1rem;
+        }
+    }
+    .carousel-inner {
+        width: 90%;
+        height: 400px;
+        .carousel-item {
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+    .actividades {
+        div {
+            .cardsArticles {
+                h3 {
+                    font-size: 1.5rem;
+                }
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    .publicidad {
+        margin: 1rem 0rem;
+        div {
+            div {
+                font-size: 1rem;
+            }
+        }
+    }
+    .pie {
+        font-size: 1rem;
+    }
+}
+/* MEDIA QUERIES HTML ACTIVIDADES*/
+@media (max-width:1200px) {
+    .cardsActividades {
+        @include propiedades-flex(column,center,center);
+        .descripcion-imagen {
+            @include propiedades-flex(column-reverse,center,center);
+            img {
+                width: 50%;
+            }
+        }
+        div h3 {
+            white-space:unset;
+            width: 100%;
+            padding: 1rem;
+        }
+    }
+    .botonMasFotos {
+        width: 20%;
+        margin-bottom: 10rem;
+    }
+}
+@media (max-width:768px) {
+    .cardsActividades {
+        .descripcion-imagen {
+            p {
+                font-size: 1.2rem;
+            }
+            img {
+                width: 75%;
+            }
+        }
+    }
+}
+@media (min-width:320px) and (max-width:576px) {
+    .tituloSection {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .cardsActividades {
+        margin: 0rem 1rem;
+        .descripcion-imagen {
+            img {
+                width: 100%;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+    .botonMasFotos {
+        width: 50%;
+    }
+}
+/* MEDIA QUERIES HTML SERVICIOS */
+@media (max-width: 1200px) {
+    .gridContainerGaleria {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas:
+            "img-1 img-1"
+            "img-2 img-4"
+            "img-3 img-4"
+            "img-5 img-6"
+            "img-9 img-7"
+            "img-9 img-8"
+            "img-10 img-11"
+            "img-10 img-12"
+            "img-13 img-14";
+    }
+    .gridMainServicios {
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas: 
+            "listaServicios listaServicios listaServicios"
+            "evento evento evento"
+            "galeria galeria galeria";
+    }
+    .listaServicios {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .cardsServicios {
+            width: 350px;
+        }
+    }
+    .evento {
+        margin: 0 auto;
+        img {
+            width: 80%;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .gridContainerGaleria {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "img-1"
+            "img-2"
+            "img-3"
+            "img-4"
+            "img-5"
+            "img-6"
+            "img-7"
+            "img-8"
+            "img-9"
+            "img-10"
+            "img-11"
+            "img-12"
+            "img-13"
+            "img-14";
+    }
+    .listaServicios {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .cardsServicios {
+            width: 100%;
+        }
+    }
+    .evento {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 100%;
+        }
+    }
+}
+@media (min-width:320px) and (max-width:576px) {
+    .gridContainerGaleria {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "img-1"
+            "img-2"
+            "img-3"
+            "img-4"
+            "img-5"
+            "img-6"
+            "img-7"
+            "img-8"
+            "img-9"
+            "img-10"
+            "img-11"
+            "img-12"
+            "img-13"
+            "img-14";
+    }
+    .listaServicios {
+        font-size: 0.8rem;
+    }
+}
+/* MEDIA QUERIES HTML PREGUNTAS FRECUENTES */
+@media (min-width:320px) and (max-width:576px) {
+    .faq {
+        h3 {
+            font-size: 1.5rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+/* MEDIA QUERIES CONTACTO Y RESERVAS */
+@media (max-width:768px) {
+    .otrosDatos {
+        .mapa {
+            width: 80%;
+        }
+    }
+}
+@media (min-width:320px) and (max-width:576px) {
+    .sectionContactoReservas {
+        section .formulario {
+            font-size: 1rem;
+        }
+    }
+    .otrosDatos {
+        font-size: 1rem;
+        .mapa {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,115 @@
+/* HTML SERVICIOS */
+.listaServicios {
+    grid-area: listaServicios;
+    .cardsServicios {
+        @include propiedades-flex(column,flex-start,center);
+        h3 {
+            @include letra($fuente-principal,2em,$color-principal);
+            background-color: $color-secundario;
+            margin: 0.5em;
+            padding: 0em 1em;
+            text-align: $tx-align;
+        }
+        p {
+            @include letra($fuente-principal,1.5em,$color-secundario);
+            margin: 1em;
+        }
+    }
+}
+.evento {
+    grid-area: evento;
+    @include propiedades-flex(column,center,center);
+    margin-right: 5em;
+    img {
+        width: 80%;
+        box-shadow: $sombreado;
+        transform: scale(1,1);
+        transition: transform 300ms;
+    }
+    img:hover {
+        transform: scale(1.02,1);
+    }
+}
+.galeria {
+    grid-area: galeria;
+    h2 {
+        @include letra($fuente-principal,2em,$color-principal);
+        margin: 0.5em;
+        background-color: $color-secundario;
+        padding-left: 1em;
+    }
+}
+.gridContainerGaleria {
+    width: 100%;
+    padding: 4em;
+    @include propiedades-grid(repeat(3,1fr),repeat(8,350px),1em);
+    grid-auto-rows: 350px;
+    grid-template-areas: 
+        "img-1 img-1 img-2"
+        "img-1 img-1 img-3"
+        "img-6 img-6 img-4"
+        "img-7 img-8 img-4"
+        "img-9 img-11 img-10"
+        "img-9 img-12 img-10"
+        "img-5 img-5 img-13"
+        "img-5 img-5 img-14";
+    div img {
+        @include sizes(100%,100%);
+        object-fit: cover;
+        @include propiedades-border(solid,$color-4,0.1em,1em);
+        transform: scale(1,1);
+        transition: transform 500ms;
+    }
+    div img:hover {
+        transform: scale(1.04,1.04);
+    }
+    .gridItemGaleria1 {
+        grid-area: img-1;
+    }
+    .gridItemGaleria2 {
+        grid-area: img-2;
+    }
+    .gridItemGaleria3 {
+        grid-area: img-3;
+    }
+    .gridItemGaleria4 {
+        grid-area: img-4;
+    }
+    .gridItemGaleria5 {
+        grid-area: img-5;
+    }
+    .gridItemGaleria6 {
+        grid-area: img-6;
+    }
+    .gridItemGaleria7 {
+        grid-area: img-7;
+    }
+    .gridItemGaleria8 {
+        grid-area: img-8;
+    }
+    .gridItemGaleria9 {
+        grid-area: img-9;
+    }
+    .gridItemGaleria10 {
+        grid-area: img-10;
+    }
+    .gridItemGaleria11 {
+        grid-area: img-11;
+    }
+    .gridItemGaleria12 {
+        grid-area: img-12;
+    }
+    .gridItemGaleria13 {
+        grid-area: img-13;
+    }
+    .gridItemGaleria14 {
+        grid-area: img-14;
+    }
+}
+.gridMainServicios {
+    width: 100%;
+    @include propiedades-grid(repeat(4,1fr),repeat(2,0.2fr),5rem);
+    grid-template-areas: 
+        "listaServicios listaServicios evento evento"
+        "galeria galeria galeria galeria";
+}

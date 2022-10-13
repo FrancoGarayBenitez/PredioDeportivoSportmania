@@ -1,0 +1,138 @@
+/* MAIN INDEX */
+body {
+    background-color: $color-principal;
+}
+main {
+    .bannerMain {
+        grid-area: bannerMain;
+        @include propiedades-flex(column,center,center);
+        @include sizes(100%,100%);
+        @include bg-img(center,no-repeat,cover);
+        @include animation(bannerMain,10s,infinite);
+        margin: auto;
+        h2 {
+            font-family: $fuente-principal;
+            font-size: 4rem;
+            color: $color-terciario;
+            background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0,0,0, 0.4));
+        }
+        p {
+            @extend h2 ;
+            padding: 0em 10em 0em 10em;
+            text-align: $tx-align;
+            font-size: 1.5rem;
+        }
+    }
+}
+@keyframes bannerMain {
+    0%, 30% {
+        background-image: url(../assets/img/futbolBanner1.jpg);
+    }
+    35%, 65% {
+        background-image: url(../assets/img/gymBanner2.jpg);
+    }
+    70%, 100% {
+        background-image: url(../assets/img/padelBanner3.jpg);
+    }
+}
+.titulosHome {
+    font-family: $fuente-principal;
+    color: $color-principal;
+    font-size: 3em;
+    margin: 1em;
+    @include propiedades-flex(row,center,center);
+    background-color: $color-secundario;
+    text-align: $tx-align;
+}
+.novedades {
+    grid-area: novedades;
+}
+
+.nosotros {
+    margin: 1rem 4rem 4rem 4rem;
+    grid-area: nosotros;
+    p {
+        @include letra($fuente-principal,2rem,$color-secundario);
+    }
+}
+
+.actividades {
+    margin: 1em;
+    grid-area: actividades;
+    div {
+        width: 100%;
+        height: 80%;
+        @include propiedades-flex(column,space-between,center);
+        .cardsArticles {
+           background-color: $color-4;
+           @include propiedades-border(dotted,$color-secundario,0.1em,1em);
+           padding: 2em;
+           margin: 2em;
+           height: 100%;
+           box-shadow: $sombreado;
+            h3 {
+                @include letra($fuente-principal,1.5em,$color-secundario);
+            }
+            p {
+                @extend h3;
+                font-size: 1.2em;
+            }
+            a {
+                @include propiedades-flex(row,center,center);
+                @include letra($fuente-principal,1.5em,$color-principal);
+                margin-top: 1em;
+                text-decoration: $decoration;
+                transform: scale(1,1);
+            }
+            a:hover {
+                transform: $hover;
+            }
+        }
+    }
+}
+
+.publicidad {
+    grid-area: publicidad;
+    margin-top: 10em;
+    padding-bottom: 4em;
+    @include sizes(100%,400px);
+    @include propiedades-flex(row,center,center);
+    div {
+        position: relative;
+        @include sizes(100%,100%);
+        box-shadow: $sombreado;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        div {
+            @include letra($fuente-principal,2em,$color-terciario);
+            position: absolute;
+            @include sizes(100%,100%);
+            top: 0;
+            p {
+                opacity: 0;
+                visibility: hidden;
+                text-align: $tx-align;
+                background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0, 1));
+                margin-top: 0;
+                transition: all 500ms ease-out;
+            }
+        }
+    }
+    div:hover > div p {
+        opacity: 1;
+        visibility: visible;
+        margin-top: 5em;
+        margin-bottom: 5em;
+    }
+}
+.gridMainHome {
+    @include propiedades-grid(repeat(4,1fr),repeat(4,0.8fr),2rem);
+    grid-template-areas: 
+    "bannerMain bannerMain bannerMain bannerMain"
+    "nosotros nosotros nosotros actividades"
+    "novedades novedades novedades actividades"
+    "publicidad publicidad publicidad publicidad";
+}

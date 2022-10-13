@@ -1,0 +1,19 @@
+/* HTML PREGUNTAS FRECUENTES */
+.faq {
+    margin: 2em;
+    h3 {
+        @include letra($fuente-principal,2em,$color-secundario);
+    }
+    p {
+        @extend h3;
+        font-size: 1.2em;
+    }
+    ul li {
+        list-style: $tipo-lista;
+        @extend p;
+    }
+    ol li {
+        @extend p;
+    }
+}
+

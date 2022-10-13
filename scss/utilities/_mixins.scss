@@ -1,0 +1,38 @@
+@mixin propiedades-flex ($direction,$justify,$align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin sizes ($width,$heigth) {
+    width: $width;
+    height: $heigth;
+}
+@mixin bg-img ($position,$repeat,$size) {
+    background-position: $position;
+    background-repeat: $repeat;
+    background-size: $size;
+}
+@mixin animation($name,$duration,$iteration) {
+    animation-name: $name;
+    animation-duration: $duration;
+    animation-iteration-count: $iteration;
+}
+@mixin letra ($fuente,$font-size,$color) {
+    font-family: $fuente;
+    font-size: $font-size;
+    color: $color;
+}
+@mixin propiedades-border ($style,$bor-color,$bor-width,$bor-radius) {
+    border-style: $style;
+    border-color: $bor-color;
+    border-width: $bor-width;
+    border-radius: $bor-radius;
+}
+@mixin propiedades-grid ($columns,$rows,$gap) {
+    display: grid;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+    grid-gap: $gap;
+}
+    

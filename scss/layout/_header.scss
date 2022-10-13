@@ -1,0 +1,41 @@
+/* HEADER */
+.head {
+    background-color: $color-secundario;
+    @include sizes(100%,15vh);
+    @include propiedades-flex(row,center,center);
+    grid-area: head;
+    .logoTitulo {
+        width: 100%;
+        @include propiedades-flex(row,flex-start,center);
+        a {
+            text-decoration: $decoration;
+        }
+        .logo {
+            @include sizes(100%,10rem);
+        }
+        .sportmania {
+            font-family: 'Wallpoet', cursive;
+            color: $color-principal;
+            font-size: 2.4em;
+        }
+    }
+    nav {
+        @include sizes(100%,100%);
+        @include propiedades-flex(row,center,flex-end);
+        ul {
+            list-style: $tipo-lista;
+            @include propiedades-flex(row,center,center);
+            column-gap: 30px;
+            transform: scale(1,1);
+            li:hover {
+                transform: scale(1.1,1.1);
+            }
+            li a {
+                font-family: $fuente-principal;
+                text-decoration: $decoration;
+                color: $color-principal;
+                font-size: 1.3rem;
+            }
+        }
+    }
+}

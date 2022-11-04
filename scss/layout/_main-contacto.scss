@@ -11,17 +11,22 @@
         margin: 2em;
         @include propiedades-flex(column,center,center);
         input {
-            width: 90%;
+            width: 100%;
+            background-color: $color-4;
+            @include propiedades-border(solid,$color-secundario,0.1em,0.5em);
+        }
+        select {
+            @extend input;
         }
         textarea {
-            width: 90%;
+            @extend input;
         }
     }
     .otrosDatos {
         @extend .formulario;
         margin:12em 0em 2em 0em;
         .mapa {
-            width: 90%;
+            width: 100%;
             margin-top: 2em;
         }
     }

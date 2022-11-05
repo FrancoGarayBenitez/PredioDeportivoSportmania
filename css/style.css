@@ -71,12 +71,12 @@ main .bannerMain {
   animation-duration: 10s;
   animation-iteration-count: infinite;
   margin: auto; }
-  main .bannerMain h2, main .bannerMain p, main .bannerMain .faq ul li, .faq ul main .bannerMain li, main .bannerMain .faq ol li, .faq ol main .bannerMain li, main .bannerMain .sectionContactoReservas section .formulario, .sectionContactoReservas section main .bannerMain .formulario, main .bannerMain .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section main .bannerMain .otrosDatos {
+  main .bannerMain h2, main .bannerMain p, main .bannerMain .faq ul li, .faq ul main .bannerMain li, main .bannerMain .faq ol li, .faq ol main .bannerMain li, main .bannerMain .sectionContactoReservas div section .formulario, .sectionContactoReservas div section main .bannerMain .formulario, main .bannerMain .sectionContactoReservas div section .otrosDatos, .sectionContactoReservas div section main .bannerMain .otrosDatos {
     font-family: "Kanit", sans-serif;
     font-size: 4rem;
     color: white;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)); }
-  main .bannerMain p, main .bannerMain .faq ul li, .faq ul main .bannerMain li, main .bannerMain .faq ol li, .faq ol main .bannerMain li, main .bannerMain .sectionContactoReservas section .formulario, .sectionContactoReservas section main .bannerMain .formulario, main .bannerMain .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section main .bannerMain .otrosDatos {
+  main .bannerMain p, main .bannerMain .faq ul li, .faq ul main .bannerMain li, main .bannerMain .faq ol li, .faq ol main .bannerMain li, main .bannerMain .sectionContactoReservas div section .formulario, .sectionContactoReservas div section main .bannerMain .formulario, main .bannerMain .sectionContactoReservas div section .otrosDatos, .sectionContactoReservas div section main .bannerMain .otrosDatos {
     padding: 0em 10em 0em 10em;
     text-align: center;
     font-size: 1.5rem; }
@@ -107,7 +107,7 @@ main .bannerMain {
 .nosotros {
   margin: 1rem 4rem 4rem 4rem;
   grid-area: nosotros; }
-  .nosotros p, .nosotros .faq ul li, .faq ul .nosotros li, .nosotros .faq ol li, .faq ol .nosotros li, .nosotros .sectionContactoReservas section .formulario, .sectionContactoReservas section .nosotros .formulario, .nosotros .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section .nosotros .otrosDatos {
+  .nosotros p, .nosotros .faq ul li, .faq ul .nosotros li, .nosotros .faq ol li, .faq ol .nosotros li, .nosotros .sectionContactoReservas div section .formulario, .sectionContactoReservas div section .nosotros .formulario, .nosotros .sectionContactoReservas div section .otrosDatos, .sectionContactoReservas div section .nosotros .otrosDatos {
     font-family: "Kanit", sans-serif;
     font-size: 2rem;
     color: black; }
@@ -132,11 +132,11 @@ main .bannerMain {
       margin: 2em;
       height: 100%;
       box-shadow: 5px 8px 12px black; }
-      .actividades div .cardsArticles h3, .actividades div .cardsArticles p, .actividades div .cardsArticles .sectionContactoReservas section .formulario, .sectionContactoReservas section .actividades div .cardsArticles .formulario, .actividades div .cardsArticles .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section .actividades div .cardsArticles .otrosDatos, .actividades div .cardsArticles .faq ul li, .faq ul .actividades div .cardsArticles li, .actividades div .cardsArticles .faq ol li, .faq ol .actividades div .cardsArticles li {
+      .actividades div .cardsArticles h3, .actividades div .cardsArticles p, .actividades .sectionContactoReservas div .cardsArticles section .formulario, .sectionContactoReservas .actividades div .cardsArticles section .formulario, .actividades .sectionContactoReservas div section .cardsArticles .formulario, .sectionContactoReservas .actividades div section .cardsArticles .formulario, .actividades .sectionContactoReservas div .cardsArticles section .otrosDatos, .sectionContactoReservas .actividades div .cardsArticles section .otrosDatos, .actividades .sectionContactoReservas div section .cardsArticles .otrosDatos, .sectionContactoReservas .actividades div section .cardsArticles .otrosDatos, .actividades div .cardsArticles .faq ul li, .faq ul .actividades div .cardsArticles li, .actividades div .cardsArticles .faq ol li, .faq ol .actividades div .cardsArticles li {
         font-family: "Kanit", sans-serif;
         font-size: 1.5em;
         color: black; }
-      .actividades div .cardsArticles p, .actividades div .cardsArticles .faq ul li, .faq ul .actividades div .cardsArticles li, .actividades div .cardsArticles .faq ol li, .faq ol .actividades div .cardsArticles li, .actividades div .cardsArticles .sectionContactoReservas section .formulario, .sectionContactoReservas section .actividades div .cardsArticles .formulario, .actividades div .cardsArticles .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section .actividades div .cardsArticles .otrosDatos {
+      .actividades div .cardsArticles p, .actividades div .cardsArticles .faq ul li, .faq ul .actividades div .cardsArticles li, .actividades div .cardsArticles .faq ol li, .faq ol .actividades div .cardsArticles li, .actividades .sectionContactoReservas div .cardsArticles section .formulario, .sectionContactoReservas .actividades div .cardsArticles section .formulario, .actividades .sectionContactoReservas div section .cardsArticles .formulario, .sectionContactoReservas .actividades div section .cardsArticles .formulario, .actividades .sectionContactoReservas div .cardsArticles section .otrosDatos, .sectionContactoReservas .actividades div .cardsArticles section .otrosDatos, .actividades .sectionContactoReservas div section .cardsArticles .otrosDatos, .sectionContactoReservas .actividades div section .cardsArticles .otrosDatos {
         font-size: 1.2em; }
       .actividades div .cardsArticles a {
         display: flex;
@@ -179,14 +179,14 @@ main .bannerMain {
       width: 100%;
       height: 100%;
       top: 0; }
-      .publicidad div div p, .publicidad div div .faq ul li, .faq ul .publicidad div div li, .publicidad div div .faq ol li, .faq ol .publicidad div div li, .publicidad div div .sectionContactoReservas section .formulario, .sectionContactoReservas section .publicidad div div .formulario, .publicidad div div .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section .publicidad div div .otrosDatos {
+      .publicidad div div p, .publicidad div div .faq ul li, .faq ul .publicidad div div li, .publicidad div div .faq ol li, .faq ol .publicidad div div li, .publicidad .sectionContactoReservas div div section .formulario, .sectionContactoReservas .publicidad div div section .formulario, .publicidad .sectionContactoReservas div section div .formulario, .sectionContactoReservas .publicidad div section div .formulario, .publicidad .sectionContactoReservas div div section .otrosDatos, .sectionContactoReservas .publicidad div div section .otrosDatos, .publicidad .sectionContactoReservas div section div .otrosDatos, .sectionContactoReservas .publicidad div section div .otrosDatos {
         opacity: 0;
         visibility: hidden;
         text-align: center;
         background: linear-gradient(rgba(255, 255, 255, 0), black);
         margin-top: 0;
         transition: all 500ms ease-out; }
-  .publicidad div:hover > div p, .publicidad div:hover > div .faq ul li, .faq ul .publicidad div:hover > div li, .publicidad div:hover > div .faq ol li, .faq ol .publicidad div:hover > div li, .publicidad div:hover > div .sectionContactoReservas section .formulario, .sectionContactoReservas section .publicidad div:hover > div .formulario, .publicidad div:hover > div .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section .publicidad div:hover > div .otrosDatos {
+  .publicidad div:hover > div p, .publicidad div:hover > div .faq ul li, .faq ul .publicidad div:hover > div li, .publicidad div:hover > div .faq ol li, .faq ol .publicidad div:hover > div li, .publicidad .sectionContactoReservas div:hover > div section .formulario, .sectionContactoReservas .publicidad div:hover > div section .formulario, .publicidad .sectionContactoReservas div:hover > div section .otrosDatos, .sectionContactoReservas .publicidad div:hover > div section .otrosDatos {
     opacity: 1;
     visibility: visible;
     margin-top: 5em;
@@ -211,7 +211,7 @@ main .bannerMain {
     height: 100%; }
     .carousel-inner .carousel-item img {
       object-fit: cover; }
-    .carousel-inner .carousel-item p, .carousel-inner .carousel-item .faq ul li, .faq ul .carousel-inner .carousel-item li, .carousel-inner .carousel-item .faq ol li, .faq ol .carousel-inner .carousel-item li, .carousel-inner .carousel-item .sectionContactoReservas section .formulario, .sectionContactoReservas section .carousel-inner .carousel-item .formulario, .carousel-inner .carousel-item .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section .carousel-inner .carousel-item .otrosDatos {
+    .carousel-inner .carousel-item p, .carousel-inner .carousel-item .faq ul li, .faq ul .carousel-inner .carousel-item li, .carousel-inner .carousel-item .faq ol li, .faq ol .carousel-inner .carousel-item li, .carousel-inner .carousel-item .sectionContactoReservas div section .formulario, .sectionContactoReservas div section .carousel-inner .carousel-item .formulario, .carousel-inner .carousel-item .sectionContactoReservas div section .otrosDatos, .sectionContactoReservas div section .carousel-inner .carousel-item .otrosDatos {
       width: 100%;
       margin: 0;
       font-family: "Kanit", sans-serif;
@@ -282,7 +282,7 @@ main .bannerMain {
   flex-direction: row;
   justify-content: center;
   align-items: center; }
-  .cardsActividades div h3, .cardsActividades .descripcion-imagen div h3, .cardsActividades .actividades div .cardsArticles p, .actividades .cardsActividades div .cardsArticles p, .cardsActividades .faq ul .actividades div .cardsArticles li, .cardsActividades .faq ol .actividades div .cardsArticles li, .cardsActividades .actividades div .cardsArticles .sectionContactoReservas section .formulario, .actividades .cardsActividades div .cardsArticles .sectionContactoReservas section .formulario, .cardsActividades .sectionContactoReservas section .actividades div .cardsArticles .formulario, .sectionContactoReservas section .actividades .cardsActividades div .cardsArticles .formulario, .cardsActividades .actividades div .cardsArticles .sectionContactoReservas section .otrosDatos, .actividades .cardsActividades div .cardsArticles .sectionContactoReservas section .otrosDatos, .cardsActividades .sectionContactoReservas section .actividades div .cardsArticles .otrosDatos, .sectionContactoReservas section .actividades .cardsActividades div .cardsArticles .otrosDatos, .cardsActividades div .faq p, .faq .cardsActividades div p, .cardsActividades div .faq ul li, .faq ul .cardsActividades div li, .cardsActividades div .faq ol li, .faq ol .cardsActividades div li, .cardsActividades div .faq .sectionContactoReservas section .formulario, .faq .sectionContactoReservas section .cardsActividades div .formulario, .cardsActividades div .sectionContactoReservas section .faq .formulario, .sectionContactoReservas section .faq .cardsActividades div .formulario, .cardsActividades div .faq .sectionContactoReservas section .otrosDatos, .faq .sectionContactoReservas section .cardsActividades div .otrosDatos, .cardsActividades div .sectionContactoReservas section .faq .otrosDatos, .sectionContactoReservas section .faq .cardsActividades div .otrosDatos {
+  .cardsActividades div h3, .cardsActividades .descripcion-imagen div h3, .cardsActividades .actividades div .cardsArticles p, .actividades .cardsActividades div .cardsArticles p, .cardsActividades .faq ul .actividades div .cardsArticles li, .cardsActividades .faq ol .actividades div .cardsArticles li, .cardsActividades .actividades .sectionContactoReservas div .cardsArticles section .formulario, .actividades .sectionContactoReservas .cardsActividades div .cardsArticles section .formulario, .cardsActividades .sectionContactoReservas .actividades div .cardsArticles section .formulario, .sectionContactoReservas .actividades .cardsActividades div .cardsArticles section .formulario, .cardsActividades .actividades .sectionContactoReservas div section .cardsArticles .formulario, .actividades .sectionContactoReservas .cardsActividades div section .cardsArticles .formulario, .cardsActividades .sectionContactoReservas .actividades div section .cardsArticles .formulario, .sectionContactoReservas .actividades .cardsActividades div section .cardsArticles .formulario, .cardsActividades .actividades .sectionContactoReservas div .cardsArticles section .otrosDatos, .actividades .sectionContactoReservas .cardsActividades div .cardsArticles section .otrosDatos, .cardsActividades .sectionContactoReservas .actividades div .cardsArticles section .otrosDatos, .sectionContactoReservas .actividades .cardsActividades div .cardsArticles section .otrosDatos, .cardsActividades .actividades .sectionContactoReservas div section .cardsArticles .otrosDatos, .actividades .sectionContactoReservas .cardsActividades div section .cardsArticles .otrosDatos, .cardsActividades .sectionContactoReservas .actividades div section .cardsArticles .otrosDatos, .sectionContactoReservas .actividades .cardsActividades div section .cardsArticles .otrosDatos, .cardsActividades div .faq p, .faq .cardsActividades div p, .cardsActividades div .faq ul li, .faq ul .cardsActividades div li, .cardsActividades div .faq ol li, .faq ol .cardsActividades div li, .cardsActividades .faq .sectionContactoReservas div section .formulario, .faq .sectionContactoReservas .cardsActividades div section .formulario, .cardsActividades .sectionContactoReservas div section .faq .formulario, .sectionContactoReservas .cardsActividades div section .faq .formulario, .cardsActividades .faq .sectionContactoReservas div section .otrosDatos, .faq .sectionContactoReservas .cardsActividades div section .otrosDatos, .cardsActividades .sectionContactoReservas div section .faq .otrosDatos, .sectionContactoReservas .cardsActividades div section .faq .otrosDatos {
     font-family: "Kanit", sans-serif;
     font-size: 2em;
     color: #D4AC0D;
@@ -293,7 +293,7 @@ main .bannerMain {
     background-color: black; }
   .cardsActividades .descripcion-imagen {
     margin: 0; }
-    .cardsActividades .descripcion-imagen p, .cardsActividades .descripcion-imagen .faq ul li, .faq ul .cardsActividades .descripcion-imagen li, .cardsActividades .descripcion-imagen .faq ol li, .faq ol .cardsActividades .descripcion-imagen li, .cardsActividades .descripcion-imagen .sectionContactoReservas section .formulario, .sectionContactoReservas section .cardsActividades .descripcion-imagen .formulario, .cardsActividades .descripcion-imagen .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section .cardsActividades .descripcion-imagen .otrosDatos {
+    .cardsActividades .descripcion-imagen p, .cardsActividades .descripcion-imagen .faq ul li, .faq ul .cardsActividades .descripcion-imagen li, .cardsActividades .descripcion-imagen .faq ol li, .faq ol .cardsActividades .descripcion-imagen li, .cardsActividades .descripcion-imagen .sectionContactoReservas div section .formulario, .sectionContactoReservas div section .cardsActividades .descripcion-imagen .formulario, .cardsActividades .descripcion-imagen .sectionContactoReservas div section .otrosDatos, .sectionContactoReservas div section .cardsActividades .descripcion-imagen .otrosDatos {
       font-family: "Kanit", sans-serif;
       font-size: 1.5em;
       color: black;
@@ -322,6 +322,9 @@ main .bannerMain {
   transform: scale(1.2, 1.2); }
 
 /* HTML SERVICIOS */
+.servicios {
+  grid-area: servicios; }
+
 .listaServicios {
   grid-area: listaServicios; }
   .listaServicios .cardsServicios {
@@ -329,7 +332,7 @@ main .bannerMain {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center; }
-    .listaServicios .cardsServicios h3, .listaServicios .cardsServicios .actividades div .cardsArticles p, .actividades div .cardsArticles .listaServicios .cardsServicios p, .listaServicios .cardsServicios .actividades div .cardsArticles .sectionContactoReservas section .formulario, .actividades div .cardsArticles .sectionContactoReservas section .listaServicios .cardsServicios .formulario, .listaServicios .cardsServicios .sectionContactoReservas section .actividades div .cardsArticles .formulario, .sectionContactoReservas section .actividades div .cardsArticles .listaServicios .cardsServicios .formulario, .listaServicios .cardsServicios .actividades div .cardsArticles .sectionContactoReservas section .otrosDatos, .actividades div .cardsArticles .sectionContactoReservas section .listaServicios .cardsServicios .otrosDatos, .listaServicios .cardsServicios .sectionContactoReservas section .actividades div .cardsArticles .otrosDatos, .sectionContactoReservas section .actividades div .cardsArticles .listaServicios .cardsServicios .otrosDatos, .listaServicios .cardsServicios .faq p, .faq .listaServicios .cardsServicios p, .listaServicios .cardsServicios .faq ul li, .faq ul .listaServicios .cardsServicios li, .listaServicios .cardsServicios .faq ol li, .faq ol .listaServicios .cardsServicios li, .listaServicios .cardsServicios .faq .sectionContactoReservas section .formulario, .faq .sectionContactoReservas section .listaServicios .cardsServicios .formulario, .listaServicios .cardsServicios .sectionContactoReservas section .faq .formulario, .sectionContactoReservas section .faq .listaServicios .cardsServicios .formulario, .listaServicios .cardsServicios .faq .sectionContactoReservas section .otrosDatos, .faq .sectionContactoReservas section .listaServicios .cardsServicios .otrosDatos, .listaServicios .cardsServicios .sectionContactoReservas section .faq .otrosDatos, .sectionContactoReservas section .faq .listaServicios .cardsServicios .otrosDatos {
+    .listaServicios .cardsServicios h3, .listaServicios .cardsServicios .actividades div .cardsArticles p, .actividades div .cardsArticles .listaServicios .cardsServicios p, .listaServicios .cardsServicios .actividades .sectionContactoReservas div .cardsArticles section .formulario, .actividades .sectionContactoReservas div .cardsArticles section .listaServicios .cardsServicios .formulario, .listaServicios .cardsServicios .sectionContactoReservas .actividades div .cardsArticles section .formulario, .sectionContactoReservas .actividades div .cardsArticles section .listaServicios .cardsServicios .formulario, .listaServicios .cardsServicios .actividades .sectionContactoReservas div section .cardsArticles .formulario, .actividades .sectionContactoReservas div section .cardsArticles .listaServicios .cardsServicios .formulario, .listaServicios .cardsServicios .sectionContactoReservas .actividades div section .cardsArticles .formulario, .sectionContactoReservas .actividades div section .cardsArticles .listaServicios .cardsServicios .formulario, .listaServicios .cardsServicios .actividades .sectionContactoReservas div .cardsArticles section .otrosDatos, .actividades .sectionContactoReservas div .cardsArticles section .listaServicios .cardsServicios .otrosDatos, .listaServicios .cardsServicios .sectionContactoReservas .actividades div .cardsArticles section .otrosDatos, .sectionContactoReservas .actividades div .cardsArticles section .listaServicios .cardsServicios .otrosDatos, .listaServicios .cardsServicios .actividades .sectionContactoReservas div section .cardsArticles .otrosDatos, .actividades .sectionContactoReservas div section .cardsArticles .listaServicios .cardsServicios .otrosDatos, .listaServicios .cardsServicios .sectionContactoReservas .actividades div section .cardsArticles .otrosDatos, .sectionContactoReservas .actividades div section .cardsArticles .listaServicios .cardsServicios .otrosDatos, .listaServicios .cardsServicios .faq p, .faq .listaServicios .cardsServicios p, .listaServicios .cardsServicios .faq ul li, .faq ul .listaServicios .cardsServicios li, .listaServicios .cardsServicios .faq ol li, .faq ol .listaServicios .cardsServicios li, .listaServicios .cardsServicios .faq .sectionContactoReservas div section .formulario, .faq .sectionContactoReservas div section .listaServicios .cardsServicios .formulario, .listaServicios .cardsServicios .sectionContactoReservas div section .faq .formulario, .sectionContactoReservas div section .faq .listaServicios .cardsServicios .formulario, .listaServicios .cardsServicios .faq .sectionContactoReservas div section .otrosDatos, .faq .sectionContactoReservas div section .listaServicios .cardsServicios .otrosDatos, .listaServicios .cardsServicios .sectionContactoReservas div section .faq .otrosDatos, .sectionContactoReservas div section .faq .listaServicios .cardsServicios .otrosDatos {
       font-family: "Kanit", sans-serif;
       font-size: 2em;
       color: #D4AC0D;
@@ -337,7 +340,7 @@ main .bannerMain {
       margin: 0.5em;
       padding: 0em 1em;
       text-align: center; }
-    .listaServicios .cardsServicios p, .listaServicios .cardsServicios .faq ul li, .faq ul .listaServicios .cardsServicios li, .listaServicios .cardsServicios .faq ol li, .faq ol .listaServicios .cardsServicios li, .listaServicios .cardsServicios .sectionContactoReservas section .formulario, .sectionContactoReservas section .listaServicios .cardsServicios .formulario, .listaServicios .cardsServicios .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section .listaServicios .cardsServicios .otrosDatos {
+    .listaServicios .cardsServicios p, .listaServicios .cardsServicios .faq ul li, .faq ul .listaServicios .cardsServicios li, .listaServicios .cardsServicios .faq ol li, .faq ol .listaServicios .cardsServicios li, .listaServicios .cardsServicios .sectionContactoReservas div section .formulario, .sectionContactoReservas div section .listaServicios .cardsServicios .formulario, .listaServicios .cardsServicios .sectionContactoReservas div section .otrosDatos, .sectionContactoReservas div section .listaServicios .cardsServicios .otrosDatos {
       font-family: "Kanit", sans-serif;
       font-size: 1.5em;
       color: black;
@@ -360,7 +363,7 @@ main .bannerMain {
 
 .galeria {
   grid-area: galeria; }
-  .galeria h2, .galeria main .bannerMain p, main .bannerMain .galeria p, .galeria main .bannerMain .faq ul li, main .bannerMain .faq ul .galeria li, .galeria .faq ul main .bannerMain li, .faq ul main .bannerMain .galeria li, .galeria main .bannerMain .faq ol li, main .bannerMain .faq ol .galeria li, .galeria .faq ol main .bannerMain li, .faq ol main .bannerMain .galeria li, .galeria main .bannerMain .sectionContactoReservas section .formulario, main .bannerMain .sectionContactoReservas section .galeria .formulario, .galeria .sectionContactoReservas section main .bannerMain .formulario, .sectionContactoReservas section main .bannerMain .galeria .formulario, .galeria main .bannerMain .sectionContactoReservas section .otrosDatos, main .bannerMain .sectionContactoReservas section .galeria .otrosDatos, .galeria .sectionContactoReservas section main .bannerMain .otrosDatos, .sectionContactoReservas section main .bannerMain .galeria .otrosDatos {
+  .galeria h3, .galeria .actividades div .cardsArticles p, .actividades div .cardsArticles .galeria p, .galeria .actividades .sectionContactoReservas div .cardsArticles section .formulario, .actividades .sectionContactoReservas div .cardsArticles section .galeria .formulario, .galeria .sectionContactoReservas .actividades div .cardsArticles section .formulario, .sectionContactoReservas .actividades div .cardsArticles section .galeria .formulario, .galeria .actividades .sectionContactoReservas div section .cardsArticles .formulario, .actividades .sectionContactoReservas div section .cardsArticles .galeria .formulario, .galeria .sectionContactoReservas .actividades div section .cardsArticles .formulario, .sectionContactoReservas .actividades div section .cardsArticles .galeria .formulario, .galeria .actividades .sectionContactoReservas div .cardsArticles section .otrosDatos, .actividades .sectionContactoReservas div .cardsArticles section .galeria .otrosDatos, .galeria .sectionContactoReservas .actividades div .cardsArticles section .otrosDatos, .sectionContactoReservas .actividades div .cardsArticles section .galeria .otrosDatos, .galeria .actividades .sectionContactoReservas div section .cardsArticles .otrosDatos, .actividades .sectionContactoReservas div section .cardsArticles .galeria .otrosDatos, .galeria .sectionContactoReservas .actividades div section .cardsArticles .otrosDatos, .sectionContactoReservas .actividades div section .cardsArticles .galeria .otrosDatos, .galeria .faq p, .faq .galeria p, .galeria .faq ul li, .faq ul .galeria li, .galeria .faq ol li, .faq ol .galeria li, .galeria .faq .sectionContactoReservas div section .formulario, .faq .sectionContactoReservas div section .galeria .formulario, .galeria .sectionContactoReservas div section .faq .formulario, .sectionContactoReservas div section .faq .galeria .formulario, .galeria .faq .sectionContactoReservas div section .otrosDatos, .faq .sectionContactoReservas div section .galeria .otrosDatos, .galeria .sectionContactoReservas div section .faq .otrosDatos, .sectionContactoReservas div section .faq .galeria .otrosDatos {
     font-family: "Kanit", sans-serif;
     font-size: 2em;
     color: #D4AC0D;
@@ -422,18 +425,18 @@ main .bannerMain {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 0.2fr);
-  grid-gap: 5rem;
-  grid-template-areas: "listaServicios listaServicios evento evento" "galeria galeria galeria galeria"; }
+  grid-template-rows: repeat(3, 0.1fr);
+  grid-gap: 2rem;
+  grid-template-areas: "servicios servicios servicios servicios" "listaServicios listaServicios evento evento" "galeria galeria galeria galeria"; }
 
 /* HTML PREGUNTAS FRECUENTES */
 .faq {
   margin: 2em; }
-  .faq h3, .faq .actividades div .cardsArticles p, .actividades div .cardsArticles .faq p, .actividades div .cardsArticles .faq ul li, .faq ul .actividades div .cardsArticles li, .actividades div .cardsArticles .faq ol li, .faq ol .actividades div .cardsArticles li, .faq p, .faq ul li, .faq ol li, .faq .sectionContactoReservas section .formulario, .sectionContactoReservas section .faq .formulario, .faq .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section .faq .otrosDatos {
+  .faq h3, .faq .actividades div .cardsArticles p, .actividades div .cardsArticles .faq p, .actividades div .cardsArticles .faq ul li, .faq ul .actividades div .cardsArticles li, .actividades div .cardsArticles .faq ol li, .faq ol .actividades div .cardsArticles li, .faq p, .faq ul li, .faq ol li, .faq .sectionContactoReservas div section .formulario, .sectionContactoReservas div section .faq .formulario, .faq .sectionContactoReservas div section .otrosDatos, .sectionContactoReservas div section .faq .otrosDatos {
     font-family: "Kanit", sans-serif;
     font-size: 2em;
     color: black; }
-  .faq p, .faq ul li, .faq ol li, .faq .sectionContactoReservas section .formulario, .sectionContactoReservas section .faq .formulario, .faq .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section .faq .otrosDatos {
+  .faq p, .faq ul li, .faq ol li, .faq .sectionContactoReservas div section .formulario, .sectionContactoReservas div section .faq .formulario, .faq .sectionContactoReservas div section .otrosDatos, .sectionContactoReservas div section .faq .otrosDatos {
     font-size: 1.2em; }
   .faq ul li {
     list-style: none; }
@@ -441,19 +444,19 @@ main .bannerMain {
 /* HTML CONTACTO Y RESERVAS */
 .sectionContactoReservas {
   margin: 0rem auto; }
-  .sectionContactoReservas section p, .sectionContactoReservas section .faq ul li, .faq ul .sectionContactoReservas section li, .sectionContactoReservas section .faq ol li, .faq ol .sectionContactoReservas section li, .sectionContactoReservas section .formulario, .sectionContactoReservas section .otrosDatos {
+  .sectionContactoReservas div section p, .sectionContactoReservas div section .faq ul li, .faq ul .sectionContactoReservas div section li, .sectionContactoReservas div section .faq ol li, .faq ol .sectionContactoReservas div section li, .sectionContactoReservas div section .formulario, .sectionContactoReservas div section .otrosDatos {
     font-family: "Kanit", sans-serif;
     font-size: 1.2em;
     color: black;
     margin-left: 1em; }
-  .sectionContactoReservas section .formulario, .sectionContactoReservas section .otrosDatos {
+  .sectionContactoReservas div section .formulario, .sectionContactoReservas div section .otrosDatos {
     font-size: 1.5em;
     margin: 2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    .sectionContactoReservas section .formulario input, .sectionContactoReservas section .otrosDatos input, .sectionContactoReservas section .formulario select, .sectionContactoReservas section .otrosDatos select, .sectionContactoReservas section .formulario textarea, .sectionContactoReservas section .otrosDatos textarea {
+    .sectionContactoReservas div section .formulario input, .sectionContactoReservas div section .otrosDatos input, .sectionContactoReservas div section .formulario select, .sectionContactoReservas div section .otrosDatos select, .sectionContactoReservas div section .formulario textarea, .sectionContactoReservas div section .otrosDatos textarea {
       width: 100%;
       background-color: #F7DC6F;
       border-style: solid;
@@ -486,7 +489,7 @@ main .bannerMain {
       flex-direction: row;
       justify-content: center;
       align-items: center; }
-  main .bannerMain p, main .bannerMain .faq ul li, .faq ul main .bannerMain li, main .bannerMain .faq ol li, .faq ol main .bannerMain li, main .bannerMain .sectionContactoReservas section .formulario, .sectionContactoReservas section main .bannerMain .formulario, main .bannerMain .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section main .bannerMain .otrosDatos {
+  main .bannerMain p, main .bannerMain .faq ul li, .faq ul main .bannerMain li, main .bannerMain .faq ol li, .faq ol main .bannerMain li, main .bannerMain .sectionContactoReservas div section .formulario, .sectionContactoReservas div section main .bannerMain .formulario, main .bannerMain .sectionContactoReservas div section .otrosDatos, .sectionContactoReservas div section main .bannerMain .otrosDatos {
     padding: 2rem;
     text-align: center; }
   .actividades div {
@@ -529,13 +532,13 @@ main .bannerMain {
       text-align: center; }
     .head nav ul li a {
       font-size: 1rem; }
-  main .bannerMain h2, main .bannerMain p, main .bannerMain .faq ul li, .faq ul main .bannerMain li, main .bannerMain .faq ol li, .faq ol main .bannerMain li, main .bannerMain .sectionContactoReservas section .formulario, .sectionContactoReservas section main .bannerMain .formulario, main .bannerMain .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section main .bannerMain .otrosDatos {
+  main .bannerMain h2, main .bannerMain p, main .bannerMain .faq ul li, .faq ul main .bannerMain li, main .bannerMain .faq ol li, .faq ol main .bannerMain li, main .bannerMain .sectionContactoReservas div section .formulario, .sectionContactoReservas div section main .bannerMain .formulario, main .bannerMain .sectionContactoReservas div section .otrosDatos, .sectionContactoReservas div section main .bannerMain .otrosDatos {
     font-size: 3rem; }
-  main .bannerMain p, main .bannerMain .faq ul li, .faq ul main .bannerMain li, main .bannerMain .faq ol li, .faq ol main .bannerMain li, main .bannerMain .sectionContactoReservas section .formulario, .sectionContactoReservas section main .bannerMain .formulario, main .bannerMain .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section main .bannerMain .otrosDatos {
+  main .bannerMain p, main .bannerMain .faq ul li, .faq ul main .bannerMain li, main .bannerMain .faq ol li, .faq ol main .bannerMain li, main .bannerMain .sectionContactoReservas div section .formulario, .sectionContactoReservas div section main .bannerMain .formulario, main .bannerMain .sectionContactoReservas div section .otrosDatos, .sectionContactoReservas div section main .bannerMain .otrosDatos {
     font-size: 1rem; }
   .titulosHome {
     font-size: 2rem; }
-  .nosotros p, .nosotros .faq ul li, .faq ul .nosotros li, .nosotros .faq ol li, .faq ol .nosotros li, .nosotros .sectionContactoReservas section .formulario, .sectionContactoReservas section .nosotros .formulario, .nosotros .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section .nosotros .otrosDatos {
+  .nosotros p, .nosotros .faq ul li, .faq ul .nosotros li, .nosotros .faq ol li, .faq ol .nosotros li, .nosotros .sectionContactoReservas div section .formulario, .sectionContactoReservas div section .nosotros .formulario, .nosotros .sectionContactoReservas div section .otrosDatos, .sectionContactoReservas div section .nosotros .otrosDatos {
     font-size: 1.8rem; }
   .actividades {
     margin-top: 10rem; }
@@ -584,24 +587,24 @@ main .bannerMain {
     align-items: center;
     width: 100%;
     height: 100%; }
-    main .bannerMain h2, main .bannerMain p, main .bannerMain .faq ul li, .faq ul main .bannerMain li, main .bannerMain .faq ol li, .faq ol main .bannerMain li, main .bannerMain .sectionContactoReservas section .formulario, .sectionContactoReservas section main .bannerMain .formulario, main .bannerMain .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section main .bannerMain .otrosDatos {
+    main .bannerMain h2, main .bannerMain p, main .bannerMain .faq ul li, .faq ul main .bannerMain li, main .bannerMain .faq ol li, .faq ol main .bannerMain li, main .bannerMain .sectionContactoReservas div section .formulario, .sectionContactoReservas div section main .bannerMain .formulario, main .bannerMain .sectionContactoReservas div section .otrosDatos, .sectionContactoReservas div section main .bannerMain .otrosDatos {
       font-size: 1.4rem;
       margin: 4rem 0rem 0rem 0rem; }
-    main .bannerMain p, main .bannerMain .faq ul li, .faq ul main .bannerMain li, main .bannerMain .faq ol li, .faq ol main .bannerMain li, main .bannerMain .sectionContactoReservas section .formulario, .sectionContactoReservas section main .bannerMain .formulario, main .bannerMain .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section main .bannerMain .otrosDatos {
+    main .bannerMain p, main .bannerMain .faq ul li, .faq ul main .bannerMain li, main .bannerMain .faq ol li, .faq ol main .bannerMain li, main .bannerMain .sectionContactoReservas div section .formulario, .sectionContactoReservas div section main .bannerMain .formulario, main .bannerMain .sectionContactoReservas div section .otrosDatos, .sectionContactoReservas div section main .bannerMain .otrosDatos {
       font-size: 0.9rem;
       margin: 1rem 0rem 4rem 0rem; }
   .titulosHome {
     font-size: 1.5rem; }
-  .nosotros p, .nosotros .faq ul li, .faq ul .nosotros li, .nosotros .faq ol li, .faq ol .nosotros li, .nosotros .sectionContactoReservas section .formulario, .sectionContactoReservas section .nosotros .formulario, .nosotros .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section .nosotros .otrosDatos {
+  .nosotros p, .nosotros .faq ul li, .faq ul .nosotros li, .nosotros .faq ol li, .faq ol .nosotros li, .nosotros .sectionContactoReservas div section .formulario, .sectionContactoReservas div section .nosotros .formulario, .nosotros .sectionContactoReservas div section .otrosDatos, .sectionContactoReservas div section .nosotros .otrosDatos {
     font-size: 1rem; }
   .carousel-inner {
     width: 90%;
     height: 400px; }
-    .carousel-inner .carousel-item p, .carousel-inner .carousel-item .faq ul li, .faq ul .carousel-inner .carousel-item li, .carousel-inner .carousel-item .faq ol li, .faq ol .carousel-inner .carousel-item li, .carousel-inner .carousel-item .sectionContactoReservas section .formulario, .sectionContactoReservas section .carousel-inner .carousel-item .formulario, .carousel-inner .carousel-item .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section .carousel-inner .carousel-item .otrosDatos {
+    .carousel-inner .carousel-item p, .carousel-inner .carousel-item .faq ul li, .faq ul .carousel-inner .carousel-item li, .carousel-inner .carousel-item .faq ol li, .faq ol .carousel-inner .carousel-item li, .carousel-inner .carousel-item .sectionContactoReservas div section .formulario, .sectionContactoReservas div section .carousel-inner .carousel-item .formulario, .carousel-inner .carousel-item .sectionContactoReservas div section .otrosDatos, .sectionContactoReservas div section .carousel-inner .carousel-item .otrosDatos {
       font-size: 1rem; }
-  .actividades div .cardsArticles h3, .actividades div .cardsArticles p, .actividades div .cardsArticles .sectionContactoReservas section .formulario, .sectionContactoReservas section .actividades div .cardsArticles .formulario, .actividades div .cardsArticles .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section .actividades div .cardsArticles .otrosDatos, .actividades div .cardsArticles .faq ul li, .faq ul .actividades div .cardsArticles li, .actividades div .cardsArticles .faq ol li, .faq ol .actividades div .cardsArticles li {
+  .actividades div .cardsArticles h3, .actividades div .cardsArticles p, .actividades .sectionContactoReservas div .cardsArticles section .formulario, .sectionContactoReservas .actividades div .cardsArticles section .formulario, .actividades .sectionContactoReservas div section .cardsArticles .formulario, .sectionContactoReservas .actividades div section .cardsArticles .formulario, .actividades .sectionContactoReservas div .cardsArticles section .otrosDatos, .sectionContactoReservas .actividades div .cardsArticles section .otrosDatos, .actividades .sectionContactoReservas div section .cardsArticles .otrosDatos, .sectionContactoReservas .actividades div section .cardsArticles .otrosDatos, .actividades div .cardsArticles .faq ul li, .faq ul .actividades div .cardsArticles li, .actividades div .cardsArticles .faq ol li, .faq ol .actividades div .cardsArticles li {
     font-size: 1.5rem; }
-  .actividades div .cardsArticles p, .actividades div .cardsArticles .faq ul li, .faq ul .actividades div .cardsArticles li, .actividades div .cardsArticles .faq ol li, .faq ol .actividades div .cardsArticles li, .actividades div .cardsArticles .sectionContactoReservas section .formulario, .sectionContactoReservas section .actividades div .cardsArticles .formulario, .actividades div .cardsArticles .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section .actividades div .cardsArticles .otrosDatos {
+  .actividades div .cardsArticles p, .actividades div .cardsArticles .faq ul li, .faq ul .actividades div .cardsArticles li, .actividades div .cardsArticles .faq ol li, .faq ol .actividades div .cardsArticles li, .actividades .sectionContactoReservas div .cardsArticles section .formulario, .sectionContactoReservas .actividades div .cardsArticles section .formulario, .actividades .sectionContactoReservas div section .cardsArticles .formulario, .sectionContactoReservas .actividades div section .cardsArticles .formulario, .actividades .sectionContactoReservas div .cardsArticles section .otrosDatos, .sectionContactoReservas .actividades div .cardsArticles section .otrosDatos, .actividades .sectionContactoReservas div section .cardsArticles .otrosDatos, .sectionContactoReservas .actividades div section .cardsArticles .otrosDatos {
     font-size: 1rem; }
   .publicidad {
     margin: 1rem 0rem; }
@@ -624,7 +627,7 @@ main .bannerMain {
       align-items: center; }
       .cardsActividades .descripcion-imagen img {
         width: 50%; }
-    .cardsActividades div h3, .cardsActividades .descripcion-imagen div h3, .cardsActividades .actividades div .cardsArticles p, .actividades .cardsActividades div .cardsArticles p, .cardsActividades .faq ul .actividades div .cardsArticles li, .cardsActividades .faq ol .actividades div .cardsArticles li, .cardsActividades .actividades div .cardsArticles .sectionContactoReservas section .formulario, .actividades .cardsActividades div .cardsArticles .sectionContactoReservas section .formulario, .cardsActividades .sectionContactoReservas section .actividades div .cardsArticles .formulario, .sectionContactoReservas section .actividades .cardsActividades div .cardsArticles .formulario, .cardsActividades .actividades div .cardsArticles .sectionContactoReservas section .otrosDatos, .actividades .cardsActividades div .cardsArticles .sectionContactoReservas section .otrosDatos, .cardsActividades .sectionContactoReservas section .actividades div .cardsArticles .otrosDatos, .sectionContactoReservas section .actividades .cardsActividades div .cardsArticles .otrosDatos, .cardsActividades div .faq p, .faq .cardsActividades div p, .cardsActividades div .faq ul li, .faq ul .cardsActividades div li, .cardsActividades div .faq ol li, .faq ol .cardsActividades div li, .cardsActividades div .faq .sectionContactoReservas section .formulario, .faq .sectionContactoReservas section .cardsActividades div .formulario, .cardsActividades div .sectionContactoReservas section .faq .formulario, .sectionContactoReservas section .faq .cardsActividades div .formulario, .cardsActividades div .faq .sectionContactoReservas section .otrosDatos, .faq .sectionContactoReservas section .cardsActividades div .otrosDatos, .cardsActividades div .sectionContactoReservas section .faq .otrosDatos, .sectionContactoReservas section .faq .cardsActividades div .otrosDatos {
+    .cardsActividades div h3, .cardsActividades .descripcion-imagen div h3, .cardsActividades .actividades div .cardsArticles p, .actividades .cardsActividades div .cardsArticles p, .cardsActividades .faq ul .actividades div .cardsArticles li, .cardsActividades .faq ol .actividades div .cardsArticles li, .cardsActividades .actividades .sectionContactoReservas div .cardsArticles section .formulario, .actividades .sectionContactoReservas .cardsActividades div .cardsArticles section .formulario, .cardsActividades .sectionContactoReservas .actividades div .cardsArticles section .formulario, .sectionContactoReservas .actividades .cardsActividades div .cardsArticles section .formulario, .cardsActividades .actividades .sectionContactoReservas div section .cardsArticles .formulario, .actividades .sectionContactoReservas .cardsActividades div section .cardsArticles .formulario, .cardsActividades .sectionContactoReservas .actividades div section .cardsArticles .formulario, .sectionContactoReservas .actividades .cardsActividades div section .cardsArticles .formulario, .cardsActividades .actividades .sectionContactoReservas div .cardsArticles section .otrosDatos, .actividades .sectionContactoReservas .cardsActividades div .cardsArticles section .otrosDatos, .cardsActividades .sectionContactoReservas .actividades div .cardsArticles section .otrosDatos, .sectionContactoReservas .actividades .cardsActividades div .cardsArticles section .otrosDatos, .cardsActividades .actividades .sectionContactoReservas div section .cardsArticles .otrosDatos, .actividades .sectionContactoReservas .cardsActividades div section .cardsArticles .otrosDatos, .cardsActividades .sectionContactoReservas .actividades div section .cardsArticles .otrosDatos, .sectionContactoReservas .actividades .cardsActividades div section .cardsArticles .otrosDatos, .cardsActividades div .faq p, .faq .cardsActividades div p, .cardsActividades div .faq ul li, .faq ul .cardsActividades div li, .cardsActividades div .faq ol li, .faq ol .cardsActividades div li, .cardsActividades .faq .sectionContactoReservas div section .formulario, .faq .sectionContactoReservas .cardsActividades div section .formulario, .cardsActividades .sectionContactoReservas div section .faq .formulario, .sectionContactoReservas .cardsActividades div section .faq .formulario, .cardsActividades .faq .sectionContactoReservas div section .otrosDatos, .faq .sectionContactoReservas .cardsActividades div section .otrosDatos, .cardsActividades .sectionContactoReservas div section .faq .otrosDatos, .sectionContactoReservas .cardsActividades div section .faq .otrosDatos {
       white-space: unset;
       width: 100%;
       padding: 1rem; }
@@ -633,7 +636,7 @@ main .bannerMain {
     margin-bottom: 10rem; } }
 
 @media (max-width: 768px) {
-  .cardsActividades .descripcion-imagen p, .cardsActividades .descripcion-imagen .faq ul li, .faq ul .cardsActividades .descripcion-imagen li, .cardsActividades .descripcion-imagen .faq ol li, .faq ol .cardsActividades .descripcion-imagen li, .cardsActividades .descripcion-imagen .sectionContactoReservas section .formulario, .sectionContactoReservas section .cardsActividades .descripcion-imagen .formulario, .cardsActividades .descripcion-imagen .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section .cardsActividades .descripcion-imagen .otrosDatos {
+  .cardsActividades .descripcion-imagen p, .cardsActividades .descripcion-imagen .faq ul li, .faq ul .cardsActividades .descripcion-imagen li, .cardsActividades .descripcion-imagen .faq ol li, .faq ol .cardsActividades .descripcion-imagen li, .cardsActividades .descripcion-imagen .sectionContactoReservas div section .formulario, .sectionContactoReservas div section .cardsActividades .descripcion-imagen .formulario, .cardsActividades .descripcion-imagen .sectionContactoReservas div section .otrosDatos, .sectionContactoReservas div section .cardsActividades .descripcion-imagen .otrosDatos {
     font-size: 1.2rem; }
   .cardsActividades .descripcion-imagen img {
     width: 75%; } }
@@ -646,7 +649,7 @@ main .bannerMain {
     margin: 0rem 1rem; }
     .cardsActividades .descripcion-imagen img {
       width: 100%; }
-    .cardsActividades .descripcion-imagen p, .cardsActividades .descripcion-imagen .faq ul li, .faq ul .cardsActividades .descripcion-imagen li, .cardsActividades .descripcion-imagen .faq ol li, .faq ol .cardsActividades .descripcion-imagen li, .cardsActividades .descripcion-imagen .sectionContactoReservas section .formulario, .sectionContactoReservas section .cardsActividades .descripcion-imagen .formulario, .cardsActividades .descripcion-imagen .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section .cardsActividades .descripcion-imagen .otrosDatos {
+    .cardsActividades .descripcion-imagen p, .cardsActividades .descripcion-imagen .faq ul li, .faq ul .cardsActividades .descripcion-imagen li, .cardsActividades .descripcion-imagen .faq ol li, .faq ol .cardsActividades .descripcion-imagen li, .cardsActividades .descripcion-imagen .sectionContactoReservas div section .formulario, .sectionContactoReservas div section .cardsActividades .descripcion-imagen .formulario, .cardsActividades .descripcion-imagen .sectionContactoReservas div section .otrosDatos, .sectionContactoReservas div section .cardsActividades .descripcion-imagen .otrosDatos {
       font-size: 1rem; }
   .botonMasFotos {
     width: 50%; } }
@@ -658,7 +661,7 @@ main .bannerMain {
     grid-template-areas: "img-1 img-1" "img-2 img-4" "img-3 img-4" "img-5 img-6" "img-9 img-7" "img-9 img-8" "img-10 img-11" "img-10 img-12" "img-13 img-14"; }
   .gridMainServicios {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "listaServicios listaServicios listaServicios" "evento evento evento" "galeria galeria galeria"; }
+    grid-template-areas: "servicios servicios servicios" "listaServicios listaServicios listaServicios" "evento evento evento" "galeria galeria galeria"; }
   .listaServicios {
     width: 100%;
     display: flex;
@@ -706,9 +709,9 @@ main .bannerMain {
 
 /* MEDIA QUERIES HTML PREGUNTAS FRECUENTES */
 @media (min-width: 320px) and (max-width: 576px) {
-  .faq h3, .faq .actividades div .cardsArticles p, .actividades div .cardsArticles .faq p, .actividades div .cardsArticles .faq ul li, .faq ul .actividades div .cardsArticles li, .actividades div .cardsArticles .faq ol li, .faq ol .actividades div .cardsArticles li, .faq p, .faq ul li, .faq ol li, .faq .sectionContactoReservas section .formulario, .sectionContactoReservas section .faq .formulario, .faq .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section .faq .otrosDatos {
+  .faq h3, .faq .actividades div .cardsArticles p, .actividades div .cardsArticles .faq p, .actividades div .cardsArticles .faq ul li, .faq ul .actividades div .cardsArticles li, .actividades div .cardsArticles .faq ol li, .faq ol .actividades div .cardsArticles li, .faq p, .faq ul li, .faq ol li, .faq .sectionContactoReservas div section .formulario, .sectionContactoReservas div section .faq .formulario, .faq .sectionContactoReservas div section .otrosDatos, .sectionContactoReservas div section .faq .otrosDatos {
     font-size: 1.5rem; }
-  .faq p, .faq ul li, .faq ol li, .faq .sectionContactoReservas section .formulario, .sectionContactoReservas section .faq .formulario, .faq .sectionContactoReservas section .otrosDatos, .sectionContactoReservas section .faq .otrosDatos {
+  .faq p, .faq ul li, .faq ol li, .faq .sectionContactoReservas div section .formulario, .sectionContactoReservas div section .faq .formulario, .faq .sectionContactoReservas div section .otrosDatos, .sectionContactoReservas div section .faq .otrosDatos {
     font-size: 1rem; } }
 
 /* MEDIA QUERIES CONTACTO Y RESERVAS */
@@ -717,7 +720,7 @@ main .bannerMain {
     width: 80%; } }
 
 @media (min-width: 320px) and (max-width: 576px) {
-  .sectionContactoReservas section .formulario, .sectionContactoReservas section .otrosDatos {
+  .sectionContactoReservas div section .formulario, .sectionContactoReservas div section .otrosDatos {
     font-size: 1rem; }
   .otrosDatos {
     font-size: 1rem; }

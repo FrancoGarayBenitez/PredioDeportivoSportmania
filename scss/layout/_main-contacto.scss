@@ -1,11 +1,11 @@
 /* HTML CONTACTO Y RESERVAS */
 .sectionContactoReservas {
     margin: 0rem auto;
-    section p {
+    div section p {
         @include letra($fuente-principal,1.2em,$color-secundario);
         margin-left: 1em;
     }
-    section .formulario {
+    div section .formulario {
         @extend p;
         font-size: 1.5em;
         margin: 2em;

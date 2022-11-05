@@ -253,7 +253,8 @@
     }
     .gridMainServicios {
         grid-template-columns: repeat(3,1fr);
-        grid-template-areas: 
+        grid-template-areas:
+            "servicios servicios servicios"
             "listaServicios listaServicios listaServicios"
             "evento evento evento"
             "galeria galeria galeria";
@@ -363,7 +364,7 @@
 }
 @media (min-width:320px) and (max-width:576px) {
     .sectionContactoReservas {
-        section .formulario {
+        div section .formulario {
             font-size: 1rem;
         }
     }

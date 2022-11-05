@@ -1,4 +1,7 @@
 /* HTML SERVICIOS */
+.servicios {
+    grid-area: servicios;
+}
 .listaServicios {
     grid-area: listaServicios;
     .cardsServicios {
@@ -32,7 +35,7 @@
 }
 .galeria {
     grid-area: galeria;
-    h2 {
+    h3 {
         @include letra($fuente-principal,2em,$color-principal);
         margin: 0.5em;
         background-color: $color-secundario;
@@ -108,8 +111,9 @@
 }
 .gridMainServicios {
     width: 100%;
-    @include propiedades-grid(repeat(4,1fr),repeat(2,0.2fr),5rem);
+    @include propiedades-grid(repeat(4,1fr),repeat(3,0.1fr),2rem);
     grid-template-areas: 
+        "servicios servicios servicios servicios"
         "listaServicios listaServicios evento evento"
         "galeria galeria galeria galeria";
 }

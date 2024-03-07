@@ -425,9 +425,9 @@ main .bannerMain {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 0.1fr);
+  grid-template-rows: repeat(2, 0.1fr);
   grid-gap: 2rem;
-  grid-template-areas: "servicios servicios servicios servicios" "listaServicios listaServicios evento evento" "galeria galeria galeria galeria"; }
+  grid-template-areas: "listaServicios listaServicios evento evento" "galeria galeria galeria galeria"; }
 
 /* HTML PREGUNTAS FRECUENTES */
 .faq {

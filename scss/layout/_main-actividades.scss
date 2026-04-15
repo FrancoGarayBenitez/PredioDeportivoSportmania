@@ -1,47 +1,60 @@
 /* HTML ACTIVIDADES */
 .tituloSection {
-    @include letra($fuente-principal,3em,$color-secundario);
-    padding: 1em;
+  @include letra($fuente-principal, 3em, $color-principal);
+  background-color: $color-secundario;
+  padding: 0.5em 1em;
+  margin-bottom: 1em;
 }
 .cardsActividades {
-    margin: 3em 3em 0em 3em;
-    @include propiedades-flex(row,center,center);
-    div h3 {
-        @include letra($fuente-principal,2em,$color-principal);
-        white-space: pre-line;
-        text-align: $tx-align;
-        width: 3em;
-        padding-bottom: 2em;
-        background-color: $color-secundario;
+  margin: 0 2em 2em 2em;
+  background-color: $color-tarjeta;
+  border-radius: 0.8em;
+  overflow: hidden;
+  @include propiedades-flex(row, flex-start, stretch);
+  div h3 {
+    @include letra($fuente-principal, 2em, $color-principal);
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    text-align: center;
+    padding: 1em 0.6em;
+    background-color: $color-secundario;
+    letter-spacing: 0.1em;
+    flex-shrink: 0;
+  }
+  .descripcion-imagen {
+    @include propiedades-flex(row, space-between, center);
+    padding: 1.5em;
+    gap: 1.5em;
+    flex: 1;
+    p {
+      @include letra($fuente-principal, 1.2em, $color-terciario);
+      flex: 1;
     }
-    .descripcion-imagen {
-        @extend .cardsActividades;
-        margin: 0;
-        p {
-            @include letra($fuente-principal,1.5em,$color-secundario);
-            margin: 1em;
-        }
-        img {
-            width: 35%;
-            margin: 1em;
-            box-shadow: $sombreado;
-            border-radius: 2em;
-        }
+    img {
+      width: 35%;
+      flex-shrink: 0;
+      box-shadow: $sombreado;
+      border-radius: 0.8em;
     }
+  }
 }
 .botonMasFotos {
-    margin: 2em auto 2em auto;
-    width: 10%;
+  display: block;
+  margin: 1.2em auto 2em auto;
+  width: fit-content;
+  padding: 0.4em 1.8em;
+  text-align: $tx-align;
+  background-color: $color-secundario;
+  border-radius: 0.4em;
+  transform: scale(1, 1);
+  transition: transform 200ms;
+  a {
+    display: block;
     text-align: $tx-align;
-    background-color: $color-4;
-    transform: scale(1,1);
-    a {
-        margin: 0 auto;
-        text-align: $tx-align;
-        text-decoration: $decoration;
-        @include letra($fuente-principal,2em,$color-secundario);
-    }
+    text-decoration: $decoration;
+    @include letra($fuente-principal, 1.1em, $color-principal);
+  }
 }
-.botonMasFotos:hover{
-    transform: $hover;
+.botonMasFotos:hover {
+  transform: $hover;
 }

@@ -1,19 +1,27 @@
 /* HTML PREGUNTAS FRECUENTES */
 .faq {
-    margin: 2em;
-    h3 {
-        @include letra($fuente-principal,2em,$color-secundario);
-    }
-    p {
-        @extend h3;
-        font-size: 1.2em;
-    }
-    ul li {
-        list-style: $tipo-lista;
-        @extend p;
-    }
-    ol li {
-        @extend p;
-    }
+  margin: 1.5em 2em;
+  background-color: $color-tarjeta;
+  border-left: 4px solid $color-principal;
+  border-radius: 0 0.5em 0.5em 0;
+  padding: 0.8em 1em;
+  transition: background-color 200ms;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.92);
+  }
+  h3 {
+    @include letra($fuente-principal, 1.6em, $color-principal);
+    margin-bottom: 0.3em;
+  }
+  p {
+    @include letra($fuente-principal, 1.1em, $color-terciario);
+  }
+  ul li {
+    list-style: $tipo-lista;
+    @include letra($fuente-principal, 1.1em, $color-terciario);
+  }
+  ol li {
+    @include letra($fuente-principal, 1.1em, $color-terciario);
+    margin-left: 1.2em;
+  }
 }
-

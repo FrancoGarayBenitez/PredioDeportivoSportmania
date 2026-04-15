@@ -1,33 +1,40 @@
 /* HTML CONTACTO Y RESERVAS */
 .sectionContactoReservas {
-    margin: 0rem auto;
-    div section p {
-        @include letra($fuente-principal,1.2em,$color-secundario);
-        margin-left: 1em;
+  margin: 0rem auto;
+  div section p {
+    @include letra($fuente-principal, 1.2em, $color-secundario);
+    margin-left: 1em;
+  }
+  div section .formulario {
+    @extend p;
+    font-size: 1.2em;
+    margin: 2em;
+    @include propiedades-flex(column, center, flex-start);
+    label {
+      @include letra($fuente-principal, 0.85em, $color-secundario);
+      font-weight: 700;
+      margin-top: 0.8em;
+      margin-bottom: 0.2em;
+      letter-spacing: 0.03em;
     }
-    div section .formulario {
-        @extend p;
-        font-size: 1.5em;
-        margin: 2em;
-        @include propiedades-flex(column,center,center);
-        input {
-            width: 100%;
-            background-color: $color-4;
-            @include propiedades-border(solid,$color-secundario,0.1em,0.5em);
-        }
-        select {
-            @extend input;
-        }
-        textarea {
-            @extend input;
-        }
+    input {
+      width: 100%;
+      background-color: $color-4;
+      @include propiedades-border(solid, $color-secundario, 0.1em, 0.5em);
     }
-    .otrosDatos {
-        @extend .formulario;
-        margin:12em 0em 2em 0em;
-        .mapa {
-            width: 100%;
-            margin-top: 2em;
-        }
+    select {
+      @extend input;
     }
+    textarea {
+      @extend input;
+    }
+  }
+  .otrosDatos {
+    @extend .formulario;
+    margin: 4em 0em 2em 0em;
+    .mapa {
+      width: 100%;
+      margin-top: 2em;
+    }
+  }
 }
